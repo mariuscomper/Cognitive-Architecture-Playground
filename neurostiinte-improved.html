@@ -887,6 +887,241 @@
       { id: 'M6', name: 'VI: Văzul', color: '#06b6d4' }
     ];
 
+    // MNEMONICS - Memory aids for key concepts
+    const MNEMONICS = [
+      {
+        id: "cortex-layers",
+        topic: "Straturi cortex (I-VI)",
+        mnemonic: "My Brain Eats Greasy Food Constantly",
+        breakdown: {
+          M: "Molecular (I)",
+          B: "External granular (II)",
+          E: "External pyramidal (III)",
+          G: "Internal Granular (IV)",
+          F: "Internal pyramidal (V)",
+          C: "Multiform (VI)"
+        },
+        module: "M4"
+      },
+      {
+        id: "cranial-nerves",
+        topic: "Nervi cranieni (I-XII)",
+        mnemonic: "On Old Olympus Towering Tops A Finn And German Viewed Some Hops",
+        breakdown: {
+          On: "Olfactiv (I)",
+          Old: "Optic (II)",
+          Olympus: "Oculomotor (III)",
+          Towering: "Trohlear (IV)",
+          Tops: "Trigeminal (V)",
+          A: "Abducens (VI)",
+          Finn: "Facial (VII)",
+          And: "Auditiv (VIII)",
+          German: "Glosofaringian (IX)",
+          Viewed: "Vag (X)",
+          Some: "Spinal accesoriu (XI)",
+          Hops: "Hipoglos (XII)"
+        },
+        module: "M4"
+      },
+      {
+        id: "meninges",
+        topic: "Meningele (exterior → interior)",
+        mnemonic: "Dad Always Plays",
+        breakdown: {
+          D: "Dura mater (cea mai tare)",
+          A: "Arahnoidă (trabecular)",
+          P: "Pia mater (cea mai subțire)"
+        },
+        module: "M4"
+      },
+      {
+        id: "neurotransmitters",
+        topic: "Neurotransmițători majori",
+        mnemonic: "GABA Drinks Serotonin Nightly",
+        breakdown: {
+          GABA: "GABA (inhibitor principal)",
+          Drinks: "Dopamina (recompensă)",
+          Serotonin: "Serotonina (mood)",
+          Nightly: "Noradrenalina (alertă)"
+        },
+        module: "M3"
+      },
+      {
+        id: "action-potential",
+        topic: "Fazele potențialului de acțiune",
+        mnemonic: "Don't Relax, Party Hard",
+        breakdown: {
+          "Don't": "Depolarizare (Na+ intră)",
+          Relax: "Repolarizare (K+ iese)",
+          Party: "Posthiperpolarizare (K+ iese încet)",
+          Hard: "Homeostază (pompa Na+/K+)"
+        },
+        module: "M3"
+      },
+      {
+        id: "lobes",
+        topic: "Lobii cerebrali",
+        mnemonic: "Front Porch Temp Only",
+        breakdown: {
+          Front: "Frontal (anterior)",
+          Porch: "Parietal (sus)",
+          Temp: "Temporal (lateral)",
+          Only: "Occipital (posterior)"
+        },
+        module: "M4"
+      }
+    ];
+
+    // 🏆 GAMIFICATION SYSTEM
+    const LEVELS = [
+      { level: 1, name: "Începător", minXP: 0, color: "#94a3b8" },
+      { level: 2, name: "Student", minXP: 500, color: "#60a5fa" },
+      { level: 3, name: "Practicant", minXP: 1500, color: "#34d399" },
+      { level: 4, name: "Expert", minXP: 3500, color: "#fbbf24" },
+      { level: 5, name: "Maestru", minXP: 7000, color: "#f97316" },
+      { level: 6, name: "Virtuoz", minXP: 12000, color: "#a855f7" },
+      { level: 7, name: "Grandmaster", minXP: 20000, color: "#ec4899" }
+    ];
+
+    // 🎨 INTERACTIVE DIAGRAMS
+    const DIAGRAMS = [
+      {
+        id: "neuron-structure",
+        title: "Structura Neuronului",
+        module: "M2",
+        parts: [
+          { id: "dendrite", label: "Dendrite", desc: "Primesc semnale de la alți neuroni" },
+          { id: "soma", label: "Soma (Corp celular)", desc: "Conține nucleul și organitele" },
+          { id: "axon", label: "Axon", desc: "Transmite potențiale de acțiune" },
+          { id: "terminal", label: "Terminații axonale", desc: "Eliberează neurotransmițători" }
+        ],
+        svg: `<svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+          <g id="dendrite" class="diagram-part">
+            <path d="M50,50 Q30,70 40,90" stroke="#3b82f6" stroke-width="3" fill="none"/>
+            <path d="M60,40 Q50,60 55,80" stroke="#3b82f6" stroke-width="3" fill="none"/>
+            <path d="M70,55 Q65,75 70,95" stroke="#3b82f6" stroke-width="3" fill="none"/>
+          </g>
+          <g id="soma" class="diagram-part">
+            <circle cx="100" cy="100" r="35" fill="#fbbf24" stroke="#f59e0b" stroke-width="2"/>
+            <circle cx="100" cy="100" r="15" fill="#fef3c7" stroke="#f59e0b" stroke-width="1"/>
+          </g>
+          <g id="axon" class="diagram-part">
+            <path d="M135,100 L250,100" stroke="#22c55e" stroke-width="8" fill="none"/>
+            <rect x="180" y="85" width="15" height="30" fill="#fff" stroke="#22c55e" stroke-width="2"/>
+            <rect x="210" y="85" width="15" height="30" fill="#fff" stroke="#22c55e" stroke-width="2"/>
+          </g>
+          <g id="terminal" class="diagram-part">
+            <circle cx="280" cy="90" r="12" fill="#ec4899" stroke="#db2777" stroke-width="2"/>
+            <circle cx="300" cy="100" r="12" fill="#ec4899" stroke="#db2777" stroke-width="2"/>
+            <circle cx="280" cy="110" r="12" fill="#ec4899" stroke="#db2777" stroke-width="2"/>
+          </g>
+        </svg>`
+      },
+      {
+        id: "synapse",
+        title: "Sinapsa Tripartită",
+        module: "M3",
+        parts: [
+          { id: "presynaptic", label: "Terminal presinaptică", desc: "Eliberează neurotransmițători" },
+          { id: "cleft", label: "Fanta sinaptică", desc: "Spațiu între neuroni (20-40nm)" },
+          { id: "postsynaptic", label: "Membrană postsinaptică", desc: "Conține receptori" },
+          { id: "astrocyte", label: "Astrocit", desc: "Reglează mediul sinaptic" }
+        ],
+        svg: `<svg viewBox="0 0 400 250" xmlns="http://www.w3.org/2000/svg">
+          <g id="presynaptic" class="diagram-part">
+            <rect x="50" y="50" width="120" height="60" rx="10" fill="#3b82f6" stroke="#1e40af" stroke-width="2"/>
+            <circle cx="80" cy="80" r="8" fill="#fef3c7" stroke="#f59e0b"/>
+            <circle cx="110" cy="75" r="8" fill="#fef3c7" stroke="#f59e0b"/>
+            <circle cx="140" cy="85" r="8" fill="#fef3c7" stroke="#f59e0b"/>
+          </g>
+          <g id="cleft" class="diagram-part">
+            <rect x="50" y="110" width="120" height="30" fill="#e0f2fe" stroke="#0ea5e9" stroke-width="1" stroke-dasharray="4"/>
+            <circle cx="90" cy="125" r="4" fill="#f59e0b"/>
+            <circle cx="120" cy="120" r="4" fill="#f59e0b"/>
+          </g>
+          <g id="postsynaptic" class="diagram-part">
+            <rect x="50" y="140" width="120" height="60" rx="10" fill="#22c55e" stroke="#15803d" stroke-width="2"/>
+            <rect x="80" y="145" width="15" height="20" fill="#fbbf24" stroke="#f59e0b"/>
+            <rect x="120" y="145" width="15" height="20" fill="#fbbf24" stroke="#f59e0b"/>
+          </g>
+          <g id="astrocyte" class="diagram-part">
+            <path d="M200,80 Q220,100 200,120 Q180,100 200,80" fill="#a855f7" stroke="#7c3aed" stroke-width="2"/>
+            <path d="M200,100 L170,125" stroke="#a855f7" stroke-width="3"/>
+            <circle cx="165" cy="130" r="8" fill="#c084fc"/>
+          </g>
+        </svg>`
+      },
+      {
+        id: "visual-pathway",
+        title: "Căile Vizuale",
+        module: "M6",
+        parts: [
+          { id: "retina", label: "Retină", desc: "Fotoreceptori și celule ganglionare" },
+          { id: "optic-nerve", label: "Nerv optic", desc: "Axonii celulelor ganglionare" },
+          { id: "chiasm", label: "Chiasmă optică", desc: "Decusația parțială (fibrele nazale)" },
+          { id: "lnp", label: "NGL (Nucleul geniculat lateral)", desc: "Releu talamic" },
+          { id: "v1", label: "V1 (Cortex vizual primar)", desc: "Procesare în cortex occipital" }
+        ],
+        svg: `<svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+          <g id="retina" class="diagram-part">
+            <circle cx="80" cy="50" r="25" fill="#ec4899" stroke="#db2777" stroke-width="2"/>
+            <circle cx="320" cy="50" r="25" fill="#ec4899" stroke="#db2777" stroke-width="2"/>
+          </g>
+          <g id="optic-nerve" class="diagram-part">
+            <line x1="80" y1="75" x2="150" y2="150" stroke="#3b82f6" stroke-width="4"/>
+            <line x1="320" y1="75" x2="250" y2="150" stroke="#3b82f6" stroke-width="4"/>
+          </g>
+          <g id="chiasm" class="diagram-part">
+            <path d="M150,150 L250,150 M150,150 L200,170 M250,150 L200,170" stroke="#fbbf24" stroke-width="5"/>
+          </g>
+          <g id="lnp" class="diagram-part">
+            <rect x="90" y="180" width="40" height="30" rx="5" fill="#22c55e" stroke="#15803d" stroke-width="2"/>
+            <rect x="270" y="180" width="40" height="30" rx="5" fill="#22c55e" stroke="#15803d" stroke-width="2"/>
+          </g>
+          <g id="v1" class="diagram-part">
+            <rect x="150" y="240" width="100" height="40" rx="8" fill="#a855f7" stroke="#7c3aed" stroke-width="2"/>
+          </g>
+        </svg>`
+      }
+    ];
+
+    const ACHIEVEMENTS = [
+      // Progress achievements
+      { id: "first-steps", name: "Primii Pași", desc: "Studiază 10 carduri", icon: "🌱", xp: 50, condition: (stats) => stats.studiedCards >= 10 },
+      { id: "serious-student", name: "Student Serios", desc: "Studiază 50 carduri", icon: "📚", xp: 100, condition: (stats) => stats.studiedCards >= 50 },
+      { id: "dedicated", name: "Dedicat", desc: "Studiază 100 carduri", icon: "🎓", xp: 200, condition: (stats) => stats.studiedCards >= 100 },
+      { id: "expert-learner", name: "Învățător Expert", desc: "Studiază 200 carduri", icon: "🏆", xp: 300, condition: (stats) => stats.studiedCards >= 200 },
+      { id: "master-student", name: "Student Maestru", desc: "Studiază 500 carduri", icon: "💎", xp: 500, condition: (stats) => stats.studiedCards >= 500 },
+      { id: "legendary", name: "Legendar", desc: "Studiază toate cele 812 carduri", icon: "👑", xp: 1000, condition: (stats) => stats.studiedCards >= 812 },
+
+      // Mastery achievements
+      { id: "first-master", name: "Prima Stăpânire", desc: "Stăpânește primul card", icon: "⭐", xp: 50, condition: (stats) => stats.masteredCards >= 1 },
+      { id: "mastery-10", name: "Stăpânire 10", desc: "Stăpânește 10 carduri", icon: "🌟", xp: 100, condition: (stats) => stats.masteredCards >= 10 },
+      { id: "mastery-50", name: "Stăpânire 50", desc: "Stăpânește 50 carduri", icon: "✨", xp: 200, condition: (stats) => stats.masteredCards >= 50 },
+      { id: "mastery-100", name: "Centul de Aur", desc: "Stăpânește 100 carduri", icon: "💯", xp: 400, condition: (stats) => stats.masteredCards >= 100 },
+
+      // Module achievements
+      { id: "m1-master", name: "Maestru M1", desc: "Stăpânește toate cardurile din M1", icon: "🧠", xp: 300, condition: (stats) => stats.modulesMastered?.M1 >= 123 },
+      { id: "m2-master", name: "Maestru M2", desc: "Stăpânește toate cardurile din M2", icon: "🔬", xp: 300, condition: (stats) => stats.modulesMastered?.M2 >= 135 },
+      { id: "m3-master", name: "Maestru M3", desc: "Stăpânește toate cardurile din M3", icon: "⚡", xp: 300, condition: (stats) => stats.modulesMastered?.M3 >= 133 },
+      { id: "m4-master", name: "Maestru M4", desc: "Stăpânește toate cardurile din M4", icon: "🗺️", xp: 300, condition: (stats) => stats.modulesMastered?.M4 >= 156 },
+      { id: "m5-master", name: "Maestru M5", desc: "Stăpânește toate cardurile din M5", icon: "🌱", xp: 300, condition: (stats) => stats.modulesMastered?.M5 >= 117 },
+      { id: "m6-master", name: "Maestru M6", desc: "Stăpânește toate cardurile din M6", icon: "👁️", xp: 300, condition: (stats) => stats.modulesMastered?.M6 >= 146 },
+
+      // Streak achievements
+      { id: "streak-3", name: "Șir de 3 Zile", desc: "Studiază 3 zile consecutiv", icon: "🔥", xp: 100, condition: (stats) => stats.currentStreak >= 3 },
+      { id: "streak-7", name: "Războinic Săptămânal", desc: "Studiază 7 zile consecutiv", icon: "🔥🔥", xp: 200, condition: (stats) => stats.currentStreak >= 7 },
+      { id: "streak-14", name: "Focus de 2 Săptămâni", desc: "Studiază 14 zile consecutiv", icon: "🔥🔥🔥", xp: 400, condition: (stats) => stats.currentStreak >= 14 },
+      { id: "streak-30", name: "Dedicație Lunară", desc: "Studiază 30 zile consecutiv", icon: "💪", xp: 800, condition: (stats) => stats.currentStreak >= 30 },
+      { id: "streak-60", name: "Imparabil", desc: "Studiază 60 zile consecutiv", icon: "🌟", xp: 1500, condition: (stats) => stats.currentStreak >= 60 },
+
+      // Special achievements
+      { id: "night-owl", name: "Bufniță de Noapte", desc: "Studiază după 23:00", icon: "🌙", xp: 50, condition: (stats) => stats.nightStudy },
+      { id: "early-bird", name: "Pasăre Matinală", desc: "Studiază înainte de 07:00", icon: "☀️", xp: 50, condition: (stats) => stats.earlyStudy },
+      { id: "speed-demon", name: "Demon de Viteză", desc: "Studiază 100 carduri într-o zi", icon: "⚡", xp: 300, condition: (stats) => stats.cardsToday >= 100 },
+      { id: "perfect-day", name: "Zi Perfectă", desc: "Atinge obiectivul zilnic", icon: "🎯", xp: 75, condition: (stats) => stats.dailyGoalReached }
+    ];
+
     function App() {
       const [cards, setCards] = useState([]);
       const [loading, setLoading] = useState(true);
@@ -900,7 +1135,49 @@
       const [searchQuery, setSearchQuery] = useState('');
       const [showDifficult, setShowDifficult] = useState(false);
 
+      // Mnemonics state
+      const [selectedMnemonic, setSelectedMnemonic] = useState(null);
+      const [mnemonicQuizMode, setMnemonicQuizMode] = useState(false);
+      const [hiddenMnemonicParts, setHiddenMnemonicParts] = useState([]);
+
+      // Gamification state
+      const [xp, setXP] = useState(0);
+      const [unlockedAchievements, setUnlockedAchievements] = useState([]);
+      const [currentStreak, setCurrentStreak] = useState(0);
+      const [lastStudyDate, setLastStudyDate] = useState(null);
+      const [dailyGoal, setDailyGoal] = useState(20);
+      const [cardsStudiedToday, setCardsStudiedToday] = useState(0);
+      const [newAchievement, setNewAchievement] = useState(null); // For popup
+
+      // Diagrams state
+      const [selectedDiagram, setSelectedDiagram] = useState(null);
+      const [diagramMode, setDiagramMode] = useState('view'); // 'view' or 'quiz'
+      const [hiddenParts, setHiddenParts] = useState([]);
+      const [completedDiagrams, setCompletedDiagrams] = useState([]);
+
+      // Exam state
+      const [examActive, setExamActive] = useState(false);
+      const [examQuestions, setExamQuestions] = useState([]);
+      const [examAnswers, setExamAnswers] = useState({});
+      const [examTimeLeft, setExamTimeLeft] = useState(90 * 60); // 90 minutes
+      const [examStartTime, setExamStartTime] = useState(null);
+      const [examResults, setExamResults] = useState(null);
+      const [examHistory, setExamHistory] = useState([]);
+      const [flaggedQuestions, setFlaggedQuestions] = useState([]);
+      const [currentExamQuestion, setCurrentExamQuestion] = useState(0);
+
+      // Session tracking state
+      const [sessionStartTime, setSessionStartTime] = useState(null);
+      const [sessionStats, setSessionStats] = useState({ studied: 0, ratings: [], xpEarned: 0 });
+      const [showSessionSummary, setShowSessionSummary] = useState(false);
+
+      // Dark mode state
+      const [darkMode, setDarkMode] = useState(false);
+
       const STORAGE_KEY = 'neuro-improved-v2';
+      const GAMIFICATION_KEY = 'neuro-gamification-v3';
+      const DIAGRAMS_KEY = 'neuro-diagrams-v3';
+      const EXAM_HISTORY_KEY = 'neuro-exam-history-v3';
 
       // Load data on mount
       useEffect(() => {
@@ -956,6 +1233,327 @@
         await storage.set(STORAGE_KEY, JSON.stringify(nc));
       };
 
+      // 🏆 Gamification Functions
+      const getCurrentLevel = (xpValue) => {
+        for (let i = LEVELS.length - 1; i >= 0; i--) {
+          if (xpValue >= LEVELS[i].minXP) return LEVELS[i];
+        }
+        return LEVELS[0];
+      };
+
+      const getNextLevel = (xpValue) => {
+        const currentLevel = getCurrentLevel(xpValue);
+        const nextLevelIndex = LEVELS.findIndex(l => l.level === currentLevel.level) + 1;
+        return nextLevelIndex < LEVELS.length ? LEVELS[nextLevelIndex] : null;
+      };
+
+      const addXP = async (amount, reason) => {
+        const newXP = xp + amount;
+        const oldLevel = getCurrentLevel(xp);
+        const newLevel = getCurrentLevel(newXP);
+        setXP(newXP);
+
+        // Level up notification
+        if (newLevel.level > oldLevel.level) {
+          setTimeout(() => {
+            alert(`🎉 Level Up! Acum ești ${newLevel.name} (Nivel ${newLevel.level})!`);
+          }, 100);
+        }
+
+        // Save gamification data
+        await saveGamificationData({ xp: newXP });
+      };
+
+      const checkAchievements = async () => {
+        const stats = calculateStats();
+        const newUnlocked = [];
+
+        for (const achievement of ACHIEVEMENTS) {
+          if (!unlockedAchievements.includes(achievement.id) && achievement.condition(stats)) {
+            newUnlocked.push(achievement.id);
+            setUnlockedAchievements(prev => [...prev, achievement.id]);
+            await addXP(achievement.xp, `Achievement: ${achievement.name}`);
+
+            // Show achievement popup
+            setNewAchievement(achievement);
+            setTimeout(() => setNewAchievement(null), 3000);
+          }
+        }
+
+        if (newUnlocked.length > 0) {
+          await saveGamificationData({ achievements: [...unlockedAchievements, ...newUnlocked] });
+        }
+      };
+
+      const calculateStats = () => {
+        const masteredCards = cards.filter(c => c.repetitions >= 3).length;
+        const studiedCards = cards.filter(c => c.lastReview).length;
+
+        const modulesMastered = {};
+        ['M1', 'M2', 'M3', 'M4', 'M5', 'M6'].forEach(m => {
+          modulesMastered[m] = cards.filter(c => c.module === m && c.repetitions >= 3).length;
+        });
+
+        const today = new Date().toISOString().split('T')[0];
+        const studiedToday = cards.filter(c => c.lastReview && c.lastReview.startsWith(today)).length;
+
+        const currentHour = new Date().getHours();
+        const nightStudy = currentHour >= 23 || currentHour < 5;
+        const earlyStudy = currentHour >= 5 && currentHour < 7;
+
+        return {
+          masteredCards,
+          studiedCards,
+          modulesMastered,
+          currentStreak,
+          cardsToday: cardsStudiedToday,
+          dailyGoalReached: cardsStudiedToday >= dailyGoal,
+          nightStudy,
+          earlyStudy
+        };
+      };
+
+      const updateStreak = async () => {
+        const today = new Date().toISOString().split('T')[0];
+        const yesterday = new Date(Date.now() - 86400000).toISOString().split('T')[0];
+
+        if (lastStudyDate === today) {
+          // Already studied today
+          return;
+        } else if (lastStudyDate === yesterday) {
+          // Continue streak
+          const newStreak = currentStreak + 1;
+          setCurrentStreak(newStreak);
+          await addXP(25, 'Streak day');
+          setLastStudyDate(today);
+          await saveGamificationData({ streak: newStreak, lastStudy: today });
+        } else if (lastStudyDate !== today) {
+          // Streak broken or first time
+          setCurrentStreak(1);
+          setLastStudyDate(today);
+          await saveGamificationData({ streak: 1, lastStudy: today });
+        }
+
+        // Reset daily counter if new day
+        if (lastStudyDate !== today) {
+          setCardsStudiedToday(0);
+        }
+      };
+
+      const saveGamificationData = async (updates) => {
+        const data = {
+          xp: updates.xp !== undefined ? updates.xp : xp,
+          achievements: updates.achievements !== undefined ? updates.achievements : unlockedAchievements,
+          streak: updates.streak !== undefined ? updates.streak : currentStreak,
+          lastStudy: updates.lastStudy !== undefined ? updates.lastStudy : lastStudyDate,
+          dailyGoal: updates.dailyGoal !== undefined ? updates.dailyGoal : dailyGoal,
+          cardsToday: updates.cardsToday !== undefined ? updates.cardsToday : cardsStudiedToday
+        };
+        await storage.set(GAMIFICATION_KEY, JSON.stringify(data));
+      };
+
+      const loadGamificationData = async () => {
+        try {
+          const result = await storage.get(GAMIFICATION_KEY);
+          if (result?.value) {
+            const data = JSON.parse(result.value);
+            setXP(data.xp || 0);
+            setUnlockedAchievements(data.achievements || []);
+            setCurrentStreak(data.streak || 0);
+            setLastStudyDate(data.lastStudy || null);
+            setDailyGoal(data.dailyGoal || 20);
+            setCardsStudiedToday(data.cardsToday || 0);
+          }
+        } catch (e) {
+          console.error('Gamification load error:', e);
+        }
+      };
+
+      // Load gamification data on mount
+      useEffect(() => {
+        loadGamificationData();
+        loadDiagramsData();
+        loadExamHistory();
+      }, []);
+
+      // Load diagrams data
+      const loadDiagramsData = async () => {
+        try {
+          const result = await storage.get(DIAGRAMS_KEY);
+          if (result?.value) {
+            const data = JSON.parse(result.value);
+            setCompletedDiagrams(data || []);
+          }
+        } catch (e) {
+          console.error('Diagrams load error:', e);
+        }
+      };
+
+      // 📝 EXAM FUNCTIONS
+      const loadExamHistory = async () => {
+        try {
+          const result = await storage.get(EXAM_HISTORY_KEY);
+          if (result?.value) {
+            const data = JSON.parse(result.value);
+            setExamHistory(data || []);
+          }
+        } catch (e) {
+          console.error('Exam history load error:', e);
+        }
+      };
+
+      const generateExam = (numQuestions = 50) => {
+        // Select cards proportionally from each module
+        const moduleCounts = {
+          M1: 123, M2: 135, M3: 133, M4: 156, M5: 117, M6: 146
+        };
+        const totalCards = Object.values(moduleCounts).reduce((a, b) => a + b, 0);
+
+        const questionsPerModule = {};
+        Object.keys(moduleCounts).forEach(m => {
+          questionsPerModule[m] = Math.round((moduleCounts[m] / totalCards) * numQuestions);
+        });
+
+        // Adjust to exactly numQuestions
+        const currentTotal = Object.values(questionsPerModule).reduce((a, b) => a + b, 0);
+        if (currentTotal < numQuestions) {
+          questionsPerModule.M4 += (numQuestions - currentTotal); // Add remainder to largest module
+        }
+
+        // Select questions
+        const selectedQuestions = [];
+        Object.keys(questionsPerModule).forEach(moduleId => {
+          const moduleCards = cards.filter(c => c.module === moduleId);
+          const shuffled = [...moduleCards].sort(() => Math.random() - 0.5);
+          const selected = shuffled.slice(0, questionsPerModule[moduleId]);
+          selectedQuestions.push(...selected);
+        });
+
+        // Shuffle final questions
+        const shuffledQuestions = selectedQuestions.sort(() => Math.random() - 0.5);
+
+        setExamQuestions(shuffledQuestions);
+        setExamAnswers({});
+        setFlaggedQuestions([]);
+        setCurrentExamQuestion(0);
+        setExamActive(true);
+        setExamTimeLeft(90 * 60);
+        setExamStartTime(new Date().toISOString());
+        setExamResults(null);
+        setView('exam');
+      };
+
+      const submitExam = async () => {
+        const endTime = new Date().toISOString();
+        const timeTaken = 90 * 60 - examTimeLeft;
+
+        // Calculate score
+        let correctAnswers = 0;
+        const results = examQuestions.map((q, idx) => {
+          const userAnswer = examAnswers[idx];
+          const isCorrect = userAnswer === 'correct'; // Simplified - in reality would check actual answer
+          if (isCorrect) correctAnswers++;
+          return {
+            question: q.question,
+            answer: q.answer,
+            userAnswer,
+            correct: isCorrect,
+            module: q.module
+          };
+        });
+
+        const score = Math.round((correctAnswers / examQuestions.length) * 100);
+
+        const examResult = {
+          date: endTime,
+          score,
+          totalQuestions: examQuestions.length,
+          correctAnswers,
+          timeTaken,
+          results
+        };
+
+        setExamResults(examResult);
+
+        // Save to history
+        const newHistory = [...examHistory, examResult];
+        setExamHistory(newHistory);
+        await storage.set(EXAM_HISTORY_KEY, JSON.stringify(newHistory));
+
+        // Award XP
+        await addXP(score * 2, 'Exam completed'); // 2 XP per point
+        if (score === 100) {
+          await addXP(500, 'Perfect exam!');
+        }
+
+        setExamActive(false);
+      };
+
+      // Exam timer
+      useEffect(() => {
+        let int;
+        if (examActive && examTimeLeft > 0) {
+          int = setInterval(() => {
+            setExamTimeLeft(t => {
+              if (t <= 1) {
+                submitExam();
+                return 0;
+              }
+              return t - 1;
+            });
+          }, 1000);
+        }
+        return () => clearInterval(int);
+      }, [examActive, examTimeLeft]);
+
+      // ⌨️ Keyboard Shortcuts
+      useEffect(() => {
+        const handleKeyPress = (e) => {
+          // Only handle shortcuts in study view
+          if (view !== 'study' || !studySession) return;
+
+          // Prevent shortcuts when typing in input fields
+          if (e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA') return;
+
+          switch(e.key) {
+            case ' ': // Space - reveal answer
+              e.preventDefault();
+              if (!showAnswer) setShowAnswer(true);
+              break;
+            case '1':
+            case '2':
+            case '3':
+            case '4':
+            case '5':
+              e.preventDefault();
+              if (showAnswer) rateCard(parseInt(e.key));
+              break;
+            case 'ArrowRight':
+              e.preventDefault();
+              if (currentCardIndex < studySession.length - 1 && showAnswer) {
+                setCurrentCardIndex(currentCardIndex + 1);
+                setShowAnswer(false);
+              }
+              break;
+            case 'ArrowLeft':
+              e.preventDefault();
+              if (currentCardIndex > 0) {
+                setCurrentCardIndex(currentCardIndex - 1);
+                setShowAnswer(false);
+              }
+              break;
+            case 'f':
+            case 'F':
+              e.preventDefault();
+              toggleDifficult();
+              break;
+          }
+        };
+
+        window.addEventListener('keydown', handleKeyPress);
+        return () => window.removeEventListener('keydown', handleKeyPress);
+      }, [view, studySession, showAnswer, currentCardIndex]);
+
       // Timer Logic
       useEffect(() => {
         let int;
@@ -978,6 +1576,11 @@
         setSelectedModule(moduleId);
         setCurrentCardIndex(0);
         setShowAnswer(false);
+
+        // Initialize session tracking
+        setSessionStartTime(Date.now());
+        setSessionStats({ studied: 0, ratings: [], xpEarned: 0 });
+
         setView('study');
       };
 
@@ -986,13 +1589,49 @@
         const updated = calculateNextReview(card, q);
         const nc = cards.map(c => c.hash === card.hash ? updated : c);
         await saveCards(nc);
+
+        // 🏆 Gamification: Award XP
+        const xpBeforeCard = xp;
+        await addXP(10, 'Studied card');
+        let xpGained = 10;
+
+        // Update daily counter
+        const newCardsToday = cardsStudiedToday + 1;
+        setCardsStudiedToday(newCardsToday);
+        await saveGamificationData({ cardsToday: newCardsToday });
+
+        // Check if card was just mastered (reached 3 repetitions)
+        if (updated.repetitions === 3 && card.repetitions < 3) {
+          await addXP(50, 'Mastered card');
+          xpGained += 50;
+        }
+
+        // Update streak
+        await updateStreak();
+
+        // Check for achievements
+        await checkAchievements();
+
+        // Track session stats
+        setSessionStats(prev => ({
+          studied: prev.studied + 1,
+          ratings: [...prev.ratings, q],
+          xpEarned: prev.xpEarned + xpGained
+        }));
+
         if (currentCardIndex < studySession.length - 1) {
           setCurrentCardIndex(currentCardIndex + 1);
           setShowAnswer(false);
         } else {
+          // Session complete - show summary
           setStudySession(null);
-          setView('dashboard');
-          alert('🎉 Sesiune completată!');
+
+          // Check daily goal completion
+          if (newCardsToday >= dailyGoal) {
+            await addXP(75, 'Daily goal reached');
+          }
+
+          setShowSessionSummary(true);
         }
       };
 
@@ -1110,6 +1749,9 @@
                     <button onClick={() => rateCard(5)} style={{...S.rateBtn, backgroundColor: '#06b6d4'}}>Ușor</button>
                   </div>
                   <p style={S.helpText}>💡 3+ repetări corecte = card stăpânit! "Nu știam" resetează progresul.</p>
+                  <div style={{marginTop: 12, padding: 12, backgroundColor: '#f8fafc', borderRadius: 8, fontSize: 12, color: '#64748b'}}>
+                    ⌨️ Scurtături: <strong>Spațiu</strong> = arată răspuns · <strong>1-5</strong> = rating · <strong>F</strong> = marchează dificil · <strong>←→</strong> = navighează
+                  </div>
                 </div>
               )}
             </div>
@@ -1154,17 +1796,1101 @@
         );
       }
 
+      // DIAGRAMS VIEW
+      if (view === 'diagrams') {
+        if (selectedDiagram) {
+          const diagram = DIAGRAMS.find(d => d.id === selectedDiagram);
+          return (
+            <div style={S.container}>
+              <div style={S.studyHeader}>
+                <button onClick={() => { setSelectedDiagram(null); setDiagramMode('view'); setHiddenParts([]); }} style={S.backBtn}>
+                  ← Înapoi la diagrame
+                </button>
+                <span style={{fontSize: 18, fontWeight: 600}}>{diagram.title}</span>
+              </div>
+
+              <div style={{marginBottom: 20, display: 'flex', gap: 10}}>
+                <button
+                  onClick={() => {
+                    setDiagramMode('view');
+                    setHiddenParts([]);
+                  }}
+                  style={{
+                    ...S.secondaryBtn,
+                    flex: 1,
+                    backgroundColor: diagramMode === 'view' ? '#dbeafe' : '#fff'
+                  }}
+                >
+                  👁️ Vizualizare
+                </button>
+                <button
+                  onClick={() => {
+                    setDiagramMode('quiz');
+                    setHiddenParts(diagram.parts.map(p => p.id));
+                  }}
+                  style={{
+                    ...S.secondaryBtn,
+                    flex: 1,
+                    backgroundColor: diagramMode === 'quiz' ? '#fef3c7' : '#fff'
+                  }}
+                >
+                  🧠 Testează-te
+                </button>
+              </div>
+
+              <div
+                style={{
+                  backgroundColor: '#fff',
+                  borderRadius: 12,
+                  padding: 20,
+                  marginBottom: 20,
+                  border: '2px solid #e2e8f0'
+                }}
+                dangerouslySetInnerHTML={{ __html: diagram.svg }}
+              />
+
+              <div style={{display: 'grid', gap: 12}}>
+                {diagram.parts.map(part => {
+                  const isHidden = hiddenParts.includes(part.id);
+                  return (
+                    <div
+                      key={part.id}
+                      onClick={() => {
+                        if (diagramMode === 'quiz') {
+                          setHiddenParts(prev =>
+                            prev.includes(part.id)
+                              ? prev.filter(id => id !== part.id)
+                              : [...prev, part.id]
+                          );
+                        }
+                      }}
+                      style={{
+                        backgroundColor: isHidden ? '#fef3c7' : '#f8fafc',
+                        border: '2px solid',
+                        borderColor: isHidden ? '#fbbf24' : '#e2e8f0',
+                        borderRadius: 12,
+                        padding: 16,
+                        cursor: diagramMode === 'quiz' ? 'pointer' : 'default',
+                        transition: 'all 0.2s'
+                      }}
+                    >
+                      <div style={{
+                        fontSize: 16,
+                        fontWeight: 700,
+                        color: '#334155',
+                        marginBottom: 6
+                      }}>
+                        {part.label}
+                      </div>
+                      {!isHidden && (
+                        <div style={{fontSize: 14, color: '#64748b'}}>
+                          {part.desc}
+                        </div>
+                      )}
+                      {isHidden && diagramMode === 'quiz' && (
+                        <div style={{fontSize: 13, color: '#94a3b8', fontStyle: 'italic'}}>
+                          Click pentru răspuns
+                        </div>
+                      )}
+                    </div>
+                  );
+                })}
+              </div>
+
+              {diagramMode === 'quiz' && hiddenParts.length === 0 && (
+                <button
+                  onClick={async () => {
+                    if (!completedDiagrams.includes(diagram.id)) {
+                      setCompletedDiagrams(prev => [...prev, diagram.id]);
+                      await addXP(100, 'Completed diagram');
+                      await storage.set(DIAGRAMS_KEY, JSON.stringify([...completedDiagrams, diagram.id]));
+                    }
+                    setSelectedDiagram(null);
+                    setDiagramMode('view');
+                  }}
+                  style={{
+                    ...S.primaryBtn,
+                    width: '100%',
+                    marginTop: 20,
+                    padding: '14px',
+                    backgroundColor: '#22c55e'
+                  }}
+                >
+                  ✅ Completează diagrama (+100 XP)
+                </button>
+              )}
+            </div>
+          );
+        }
+
+        return (
+          <div style={S.container}>
+            <div style={S.studyHeader}>
+              <button onClick={() => setView('dashboard')} style={S.backBtn}>← Înapoi</button>
+              <span style={{fontSize: 18, fontWeight: 600}}>🎨 Diagrame Interactive</span>
+            </div>
+
+            <div style={{marginBottom: 20}}>
+              <p style={{fontSize: 14, color: '#64748b', textAlign: 'center'}}>
+                Explorează structuri neuroanatomice prin diagrame interactive. Click pe o diagramă pentru a începe.
+              </p>
+            </div>
+
+            <div style={{display: 'grid', gap: 12}}>
+              {DIAGRAMS.map(diagram => {
+                const isCompleted = completedDiagrams.includes(diagram.id);
+                const module = MODULES.find(m => m.id === diagram.module);
+                return (
+                  <div
+                    key={diagram.id}
+                    onClick={() => setSelectedDiagram(diagram.id)}
+                    style={{
+                      backgroundColor: isCompleted ? '#f0fdf4' : '#fff',
+                      border: '2px solid',
+                      borderColor: isCompleted ? '#22c55e' : '#e2e8f0',
+                      borderRadius: 12,
+                      padding: 16,
+                      cursor: 'pointer',
+                      transition: 'all 0.2s'
+                    }}
+                  >
+                    <div style={{display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: 8}}>
+                      <div style={{fontSize: 16, fontWeight: 700, color: '#334155'}}>
+                        {diagram.title}
+                      </div>
+                      {isCompleted && <span style={{fontSize: 20}}>✅</span>}
+                    </div>
+                    <div style={{...S.badge, backgroundColor: module?.color, display: 'inline-block', marginBottom: 8}}>
+                      {module?.name}
+                    </div>
+                    <div style={{fontSize: 13, color: '#64748b'}}>
+                      {diagram.parts.length} părți identificabile
+                    </div>
+                  </div>
+                );
+              })}
+            </div>
+          </div>
+        );
+      }
+
+      // ACHIEVEMENTS VIEW
+      if (view === 'achievements') {
+        const stats = calculateStats();
+        return (
+          <div style={S.container}>
+            <div style={S.studyHeader}>
+              <button onClick={() => setView('dashboard')} style={S.backBtn}>← Înapoi</button>
+              <span style={{fontSize: 18, fontWeight: 600}}>🏆 Realizări</span>
+            </div>
+
+            <div style={{marginBottom: 20, textAlign: 'center'}}>
+              <div style={{fontSize: 32, fontWeight: 700, color: '#334155', marginBottom: 8}}>
+                {unlockedAchievements.length} / {ACHIEVEMENTS.length}
+              </div>
+              <div style={{fontSize: 14, color: '#64748b'}}>
+                {Math.round((unlockedAchievements.length / ACHIEVEMENTS.length) * 100)}% completat
+              </div>
+            </div>
+
+            <div style={{display: 'grid', gap: 12}}>
+              {ACHIEVEMENTS.map(achievement => {
+                const isUnlocked = unlockedAchievements.includes(achievement.id);
+                const isAvailable = !isUnlocked && achievement.condition(stats);
+
+                return (
+                  <div
+                    key={achievement.id}
+                    style={{
+                      backgroundColor: isUnlocked ? '#fef3c7' : '#f8fafc',
+                      border: '2px solid',
+                      borderColor: isUnlocked ? '#fbbf24' : '#e2e8f0',
+                      borderRadius: 12,
+                      padding: 16,
+                      opacity: isUnlocked ? 1 : 0.6,
+                      transition: 'all 0.2s'
+                    }}
+                  >
+                    <div style={{display: 'flex', alignItems: 'center', gap: 12}}>
+                      <div style={{
+                        fontSize: 40,
+                        filter: isUnlocked ? 'none' : 'grayscale(100%)'
+                      }}>
+                        {achievement.icon}
+                      </div>
+                      <div style={{flex: 1}}>
+                        <div style={{
+                          fontSize: 16,
+                          fontWeight: 700,
+                          color: isUnlocked ? '#92400e' : '#64748b',
+                          marginBottom: 4
+                        }}>
+                          {achievement.name}
+                          {isUnlocked && <span style={{marginLeft: 8, fontSize: 18}}>✅</span>}
+                          {isAvailable && <span style={{marginLeft: 8, fontSize: 14, color: '#22c55e'}}>📍 Aproape!</span>}
+                        </div>
+                        <div style={{
+                          fontSize: 13,
+                          color: isUnlocked ? '#a16207' : '#94a3b8',
+                          marginBottom: 4
+                        }}>
+                          {achievement.desc}
+                        </div>
+                        <div style={{
+                          fontSize: 12,
+                          fontWeight: 600,
+                          color: '#ea580c'
+                        }}>
+                          +{achievement.xp} XP
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                );
+              })}
+            </div>
+          </div>
+        );
+      }
+
+      // MNEMONICS VIEW
+      if (view === 'mnemonics') {
+        return (
+          <div style={S.container}>
+            <div style={S.studyHeader}>
+              <button onClick={() => setView('dashboard')} style={S.backBtn}>← Înapoi</button>
+              <span style={{fontSize: 18, fontWeight: 600}}>🧩 Mnemonice</span>
+            </div>
+            <div style={{marginBottom: 20}}>
+              <p style={{fontSize: 14, color: '#64748b', textAlign: 'center'}}>
+                Memory aids pentru concepte cheie. Click pe un mnemonic pentru detalii.
+              </p>
+            </div>
+            <div style={{display: 'flex', flexDirection: 'column', gap: 12}}>
+              {MNEMONICS.map(mnem => {
+                const mod = MODULES.find(m => m.id === mnem.module);
+                const isExpanded = selectedMnemonic === mnem.id;
+                return (
+                  <div key={mnem.id} style={{
+                    border: '2px solid #e2e8f0',
+                    borderRadius: 12,
+                    padding: 16,
+                    backgroundColor: isExpanded ? '#f8fafc' : '#fff',
+                    cursor: 'pointer',
+                    transition: 'all 0.2s'
+                  }} onClick={() => setSelectedMnemonic(isExpanded ? null : mnem.id)}>
+                    <div style={{display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: 8}}>
+                      <div style={{fontWeight: 600, fontSize: 16}}>{mnem.topic}</div>
+                      <div style={{...S.badge, backgroundColor: mod?.color}}>{mod?.name}</div>
+                    </div>
+                    <div style={{
+                      fontSize: 18,
+                      fontWeight: 700,
+                      color: '#8b5cf6',
+                      marginBottom: 12,
+                      fontFamily: 'monospace',
+                      letterSpacing: '0.5px'
+                    }}>
+                      {mnem.mnemonic}
+                    </div>
+                    {isExpanded && (
+                      <>
+                        <div style={{borderTop: '1px solid #e2e8f0', paddingTop: 12, marginTop: 8}}>
+                          <div style={{fontSize: 13, fontWeight: 600, color: '#64748b', marginBottom: 8}}>
+                            Breakdown:
+                          </div>
+                          {Object.entries(mnem.breakdown).map(([letter, meaning]) => (
+                            <div key={letter} style={{
+                              padding: '8px 12px',
+                              marginBottom: 6,
+                              backgroundColor: '#fff',
+                              borderRadius: 8,
+                              border: '1px solid #e2e8f0',
+                              display: 'flex',
+                              gap: 12
+                            }}>
+                              <span style={{
+                                fontWeight: 700,
+                                color: '#8b5cf6',
+                                minWidth: 80,
+                                fontFamily: 'monospace'
+                              }}>{letter}</span>
+                              <span style={{color: '#334155'}}>{meaning}</span>
+                            </div>
+                          ))}
+                        </div>
+                        <div style={{marginTop: 12, display: 'flex', gap: 8}}>
+                          <button
+                            onClick={(e) => {
+                              e.stopPropagation();
+                              setMnemonicQuizMode(!mnemonicQuizMode);
+                              setHiddenMnemonicParts(mnemonicQuizMode ? [] : Object.keys(mnem.breakdown));
+                            }}
+                            style={{
+                              ...S.secondaryBtn,
+                              flex: 1,
+                              backgroundColor: mnemonicQuizMode ? '#fef3c7' : '#fff'
+                            }}
+                          >
+                            {mnemonicQuizMode ? '👁️ Arată tot' : '🧠 Testează-te'}
+                          </button>
+                        </div>
+                        {mnemonicQuizMode && (
+                          <div style={{marginTop: 12, padding: 12, backgroundColor: '#fef3c7', borderRadius: 8}}>
+                            <div style={{fontSize: 13, fontWeight: 600, marginBottom: 8}}>
+                              Quiz Mode: Click pe litere pentru a dezvălui răspunsul
+                            </div>
+                            {Object.entries(mnem.breakdown).map(([letter, meaning]) => {
+                              const isHidden = hiddenMnemonicParts.includes(letter);
+                              return (
+                                <div
+                                  key={letter}
+                                  onClick={(e) => {
+                                    e.stopPropagation();
+                                    setHiddenMnemonicParts(prev =>
+                                      prev.includes(letter)
+                                        ? prev.filter(l => l !== letter)
+                                        : [...prev, letter]
+                                    );
+                                  }}
+                                  style={{
+                                    padding: '8px 12px',
+                                    marginBottom: 6,
+                                    backgroundColor: '#fff',
+                                    borderRadius: 8,
+                                    cursor: 'pointer',
+                                    border: isHidden ? '2px dashed #a855f7' : '1px solid #e2e8f0'
+                                  }}
+                                >
+                                  <span style={{fontWeight: 700, color: '#8b5cf6', fontFamily: 'monospace'}}>
+                                    {letter}
+                                  </span>
+                                  {' → '}
+                                  {isHidden ? (
+                                    <span style={{color: '#94a3b8', fontStyle: 'italic'}}>??? (click pentru răspuns)</span>
+                                  ) : (
+                                    <span style={{color: '#334155'}}>{meaning}</span>
+                                  )}
+                                </div>
+                              );
+                            })}
+                          </div>
+                        )}
+                      </>
+                    )}
+                  </div>
+                );
+              })}
+            </div>
+          </div>
+        );
+      }
+
+      // ANALYTICS VIEW
+      if (view === 'analytics') {
+        // Calculate analytics
+        const moduleAnalytics = MODULES.map(mod => {
+          const moduleCards = cards.filter(c => c.module === mod.id);
+          const mastered = moduleCards.filter(c => c.repetitions >= 3).length;
+          const learning = moduleCards.filter(c => c.repetitions > 0 && c.repetitions < 3).length;
+          const newCards = moduleCards.filter(c => c.repetitions === 0).length;
+          const avgEaseFactor = moduleCards.reduce((sum, c) => sum + c.easeFactor, 0) / moduleCards.length;
+          const progressPercent = Math.round((mastered / moduleCards.length) * 100);
+
+          return {
+            module: mod,
+            total: moduleCards.length,
+            mastered,
+            learning,
+            newCards,
+            avgEaseFactor: avgEaseFactor.toFixed(2),
+            progressPercent
+          };
+        });
+
+        // Detect leeches (cards failed many times - low ease factor)
+        const leeches = cards.filter(c => c.easeFactor < 2.0 && c.repetitions > 2);
+
+        // Overall stats
+        const totalStudied = cards.filter(c => c.lastReview).length;
+        const totalMastered = cards.filter(c => c.repetitions >= 3).length;
+        const overallProgress = Math.round((totalMastered / cards.length) * 100);
+
+        // Predict score based on mastery
+        const predictedScore = Math.min(100, Math.round(40 + (overallProgress * 0.6)));
+
+        return (
+          <div style={S.container}>
+            <div style={S.studyHeader}>
+              <button onClick={() => setView('dashboard')} style={S.backBtn}>← Înapoi</button>
+              <span style={{fontSize: 18, fontWeight: 600}}>📊 Analytics</span>
+            </div>
+
+            {/* Overall Stats */}
+            <div style={{
+              backgroundColor: '#fff',
+              border: '2px solid #e2e8f0',
+              borderRadius: 12,
+              padding: 20,
+              marginBottom: 20
+            }}>
+              <h3 style={{fontSize: 16, fontWeight: 700, color: '#334155', marginBottom: 16}}>
+                📈 Progres General
+              </h3>
+              <div style={{display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 12, marginBottom: 16}}>
+                <div style={{textAlign: 'center'}}>
+                  <div style={{fontSize: 24, fontWeight: 700, color: '#3b82f6'}}>{totalStudied}</div>
+                  <div style={{fontSize: 12, color: '#64748b'}}>Studiate</div>
+                </div>
+                <div style={{textAlign: 'center'}}>
+                  <div style={{fontSize: 24, fontWeight: 700, color: '#22c55e'}}>{totalMastered}</div>
+                  <div style={{fontSize: 12, color: '#64748b'}}>Stăpânite</div>
+                </div>
+                <div style={{textAlign: 'center'}}>
+                  <div style={{fontSize: 24, fontWeight: 700, color: '#f59e0b'}}>{overallProgress}%</div>
+                  <div style={{fontSize: 12, color: '#64748b'}}>Progres</div>
+                </div>
+              </div>
+              <div style={{
+                backgroundColor: '#f0fdf4',
+                border: '2px solid #22c55e',
+                borderRadius: 8,
+                padding: 12,
+                textAlign: 'center'
+              }}>
+                <div style={{fontSize: 14, fontWeight: 600, color: '#15803d', marginBottom: 4}}>
+                  🎯 Scor Estimat Examen
+                </div>
+                <div style={{fontSize: 32, fontWeight: 700, color: '#16a34a'}}>
+                  {predictedScore}/100
+                </div>
+                <div style={{fontSize: 12, color: '#166534'}}>
+                  Bazat pe progresul curent ({overallProgress}%)
+                </div>
+              </div>
+            </div>
+
+            {/* Module Heatmap */}
+            <div style={{
+              backgroundColor: '#fff',
+              border: '2px solid #e2e8f0',
+              borderRadius: 12,
+              padding: 20,
+              marginBottom: 20
+            }}>
+              <h3 style={{fontSize: 16, fontWeight: 700, color: '#334155', marginBottom: 16}}>
+                🗺️ Heatmap Module
+              </h3>
+              {moduleAnalytics.map(mod => (
+                <div key={mod.module.id} style={{marginBottom: 16}}>
+                  <div style={{display: 'flex', justifyContent: 'space-between', marginBottom: 6}}>
+                    <div style={{fontSize: 14, fontWeight: 600, color: '#334155'}}>
+                      {mod.module.name}
+                    </div>
+                    <div style={{fontSize: 13, color: '#64748b'}}>
+                      {mod.mastered}/{mod.total} ({mod.progressPercent}%)
+                    </div>
+                  </div>
+                  <div style={{
+                    width: '100%',
+                    height: 24,
+                    backgroundColor: '#f1f5f9',
+                    borderRadius: 6,
+                    overflow: 'hidden',
+                    display: 'flex'
+                  }}>
+                    <div
+                      style={{
+                        width: `${(mod.mastered / mod.total) * 100}%`,
+                        backgroundColor: '#22c55e',
+                        transition: 'width 0.3s'
+                      }}
+                      title={`Stăpânite: ${mod.mastered}`}
+                    />
+                    <div
+                      style={{
+                        width: `${(mod.learning / mod.total) * 100}%`,
+                        backgroundColor: '#fbbf24',
+                        transition: 'width 0.3s'
+                      }}
+                      title={`În învățare: ${mod.learning}`}
+                    />
+                    <div
+                      style={{
+                        width: `${(mod.newCards / mod.total) * 100}%`,
+                        backgroundColor: '#e2e8f0',
+                        transition: 'width 0.3s'
+                      }}
+                      title={`Noi: ${mod.newCards}`}
+                    />
+                  </div>
+                  <div style={{fontSize: 11, color: '#94a3b8', marginTop: 4}}>
+                    Ease Factor mediu: {mod.avgEaseFactor}
+                  </div>
+                </div>
+              ))}
+              <div style={{display: 'flex', gap: 12, marginTop: 12, fontSize: 12}}>
+                <div style={{display: 'flex', alignItems: 'center', gap: 4}}>
+                  <div style={{width: 12, height: 12, backgroundColor: '#22c55e', borderRadius: 2}} />
+                  <span style={{color: '#64748b'}}>Stăpânite</span>
+                </div>
+                <div style={{display: 'flex', alignItems: 'center', gap: 4}}>
+                  <div style={{width: 12, height: 12, backgroundColor: '#fbbf24', borderRadius: 2}} />
+                  <span style={{color: '#64748b'}}>În învățare</span>
+                </div>
+                <div style={{display: 'flex', alignItems: 'center', gap: 4}}>
+                  <div style={{width: 12, height: 12, backgroundColor: '#e2e8f0', borderRadius: 2}} />
+                  <span style={{color: '#64748b'}}>Noi</span>
+                </div>
+              </div>
+            </div>
+
+            {/* Leech Detection */}
+            {leeches.length > 0 && (
+              <div style={{
+                backgroundColor: '#fef2f2',
+                border: '2px solid #ef4444',
+                borderRadius: 12,
+                padding: 20,
+                marginBottom: 20
+              }}>
+                <h3 style={{fontSize: 16, fontWeight: 700, color: '#dc2626', marginBottom: 12}}>
+                  ⚠️ Carduri Problematice ({leeches.length})
+                </h3>
+                <p style={{fontSize: 13, color: '#991b1b', marginBottom: 12}}>
+                  Aceste carduri au un ease factor scăzut și necesită atenție specială:
+                </p>
+                <div style={{maxHeight: 200, overflowY: 'auto'}}>
+                  {leeches.slice(0, 5).map(card => (
+                    <div
+                      key={card.id}
+                      style={{
+                        backgroundColor: '#fff',
+                        padding: 12,
+                        borderRadius: 8,
+                        marginBottom: 8,
+                        fontSize: 13
+                      }}
+                    >
+                      <div style={{fontWeight: 600, color: '#334155', marginBottom: 4}}>
+                        {card.question.substring(0, 80)}...
+                      </div>
+                      <div style={{fontSize: 11, color: '#64748b'}}>
+                        Ease Factor: {card.easeFactor.toFixed(2)} • Repetări: {card.repetitions}
+                      </div>
+                    </div>
+                  ))}
+                </div>
+                {leeches.length > 5 && (
+                  <div style={{fontSize: 12, color: '#991b1b', marginTop: 8, textAlign: 'center'}}>
+                    +{leeches.length - 5} carduri în plus
+                  </div>
+                )}
+              </div>
+            )}
+
+            {/* Weak Areas */}
+            <div style={{
+              backgroundColor: '#fff',
+              border: '2px solid #e2e8f0',
+              borderRadius: 12,
+              padding: 20
+            }}>
+              <h3 style={{fontSize: 16, fontWeight: 700, color: '#334155', marginBottom: 12}}>
+                🎯 Zone Slabe
+              </h3>
+              {moduleAnalytics
+                .filter(m => m.progressPercent < 50)
+                .sort((a, b) => a.progressPercent - b.progressPercent)
+                .map(mod => (
+                  <div
+                    key={mod.module.id}
+                    style={{
+                      backgroundColor: '#fef3c7',
+                      padding: 12,
+                      borderRadius: 8,
+                      marginBottom: 8
+                    }}
+                  >
+                    <div style={{fontSize: 14, fontWeight: 600, color: '#78350f', marginBottom: 4}}>
+                      {mod.module.name}: {mod.progressPercent}%
+                    </div>
+                    <div style={{fontSize: 12, color: '#a16207'}}>
+                      Recomandare: Studiază {mod.newCards} carduri noi și repetă {mod.learning} carduri în curs
+                    </div>
+                  </div>
+                ))}
+              {moduleAnalytics.every(m => m.progressPercent >= 50) && (
+                <div style={{textAlign: 'center', padding: 20, color: '#22c55e'}}>
+                  🎉 Felicitări! Toate modulele au progres >50%
+                </div>
+              )}
+            </div>
+          </div>
+        );
+      }
+
+      // EXAM VIEW
+      if (view === 'exam') {
+        if (examResults) {
+          // Show results
+          return (
+            <div style={S.container}>
+              <div style={S.header}>
+                <h1 style={S.title}>📊 Rezultate Examen</h1>
+              </div>
+
+              <div style={{
+                backgroundColor: examResults.score >= 70 ? '#f0fdf4' : '#fef2f2',
+                border: '3px solid',
+                borderColor: examResults.score >= 70 ? '#22c55e' : '#ef4444',
+                borderRadius: 12,
+                padding: 24,
+                marginBottom: 20,
+                textAlign: 'center'
+              }}>
+                <div style={{fontSize: 64, fontWeight: 700, color: examResults.score >= 70 ? '#16a34a' : '#dc2626'}}>
+                  {examResults.score}
+                </div>
+                <div style={{fontSize: 18, fontWeight: 600, color: '#64748b', marginBottom: 8}}>
+                  {examResults.correctAnswers} / {examResults.totalQuestions} corecte
+                </div>
+                <div style={{fontSize: 14, color: '#94a3b8'}}>
+                  Timp: {Math.floor(examResults.timeTaken / 60)} min {examResults.timeTaken % 60} sec
+                </div>
+                <div style={{fontSize: 14, fontWeight: 600, color: '#ea580c', marginTop: 12}}>
+                  +{examResults.score * 2} XP câștigate!
+                </div>
+              </div>
+
+              <button
+                onClick={() => {
+                  setView('dashboard');
+                  setExamResults(null);
+                }}
+                style={{...S.primaryBtn, width: '100%', marginBottom: 12}}
+              >
+                ← Înapoi la Dashboard
+              </button>
+
+              <button
+                onClick={() => generateExam(50)}
+                style={{...S.secondaryBtn, width: '100%'}}
+              >
+                🔄 Încearcă alt examen
+              </button>
+            </div>
+          );
+        }
+
+        if (examActive && examQuestions.length > 0) {
+          const currentQuestion = examQuestions[currentExamQuestion];
+          const progress = Math.round(((currentExamQuestion + 1) / examQuestions.length) * 100);
+
+          return (
+            <div style={S.container}>
+              <div style={{
+                backgroundColor: '#fef3c7',
+                padding: 16,
+                borderRadius: 12,
+                marginBottom: 20,
+                display: 'flex',
+                justifyContent: 'space-between',
+                alignItems: 'center'
+              }}>
+                <div>
+                  <div style={{fontSize: 18, fontWeight: 700, color: '#92400e'}}>
+                    ⏱️ {Math.floor(examTimeLeft / 60)}:{String(examTimeLeft % 60).padStart(2, '0')}
+                  </div>
+                  <div style={{fontSize: 13, color: '#a16207'}}>
+                    Întrebare {currentExamQuestion + 1} / {examQuestions.length}
+                  </div>
+                </div>
+                <div style={{fontSize: 14, fontWeight: 600, color: '#78350f'}}>
+                  {progress}% complet
+                </div>
+              </div>
+
+              <div style={{
+                backgroundColor: '#fff',
+                border: '2px solid #e2e8f0',
+                borderRadius: 12,
+                padding: 20,
+                marginBottom: 20
+              }}>
+                <div style={{...S.badge, backgroundColor: MODULES.find(m => m.id === currentQuestion.module)?.color, marginBottom: 12}}>
+                  {MODULES.find(m => m.id === currentQuestion.module)?.name}
+                </div>
+                <div style={{fontSize: 16, fontWeight: 600, color: '#334155', marginBottom: 16}}>
+                  {currentQuestion.question}
+                </div>
+                <div style={{fontSize: 14, color: '#64748b', lineHeight: 1.6}}>
+                  {currentQuestion.answer}
+                </div>
+              </div>
+
+              <div style={{marginBottom: 20}}>
+                <label style={{fontSize: 14, fontWeight: 600, color: '#64748b', marginBottom: 8, display: 'block'}}>
+                  Răspunsul tău:
+                </label>
+                <div style={{display: 'flex', gap: 10}}>
+                  <button
+                    onClick={() => setExamAnswers({...examAnswers, [currentExamQuestion]: 'correct'})}
+                    style={{
+                      ...S.secondaryBtn,
+                      flex: 1,
+                      backgroundColor: examAnswers[currentExamQuestion] === 'correct' ? '#dcfce7' : '#fff',
+                      borderColor: examAnswers[currentExamQuestion] === 'correct' ? '#22c55e' : '#e2e8f0'
+                    }}
+                  >
+                    ✅ Știam
+                  </button>
+                  <button
+                    onClick={() => setExamAnswers({...examAnswers, [currentExamQuestion]: 'incorrect'})}
+                    style={{
+                      ...S.secondaryBtn,
+                      flex: 1,
+                      backgroundColor: examAnswers[currentExamQuestion] === 'incorrect' ? '#fee2e2' : '#fff',
+                      borderColor: examAnswers[currentExamQuestion] === 'incorrect' ? '#ef4444' : '#e2e8f0'
+                    }}
+                  >
+                    ❌ Nu știam
+                  </button>
+                </div>
+              </div>
+
+              <div style={{display: 'flex', gap: 10, marginBottom: 20}}>
+                <button
+                  onClick={() => setCurrentExamQuestion(Math.max(0, currentExamQuestion - 1))}
+                  disabled={currentExamQuestion === 0}
+                  style={{
+                    ...S.secondaryBtn,
+                    flex: 1,
+                    opacity: currentExamQuestion === 0 ? 0.5 : 1
+                  }}
+                >
+                  ← Anterior
+                </button>
+                {currentExamQuestion < examQuestions.length - 1 ? (
+                  <button
+                    onClick={() => setCurrentExamQuestion(currentExamQuestion + 1)}
+                    style={{...S.primaryBtn, flex: 1}}
+                  >
+                    Următoare →
+                  </button>
+                ) : (
+                  <button
+                    onClick={() => {
+                      if (confirm('Ești sigur că vrei să trimiți examenul?')) {
+                        submitExam();
+                      }
+                    }}
+                    style={{...S.primaryBtn, flex: 1, backgroundColor: '#22c55e'}}
+                  >
+                    ✅ Trimite Examen
+                  </button>
+                )}
+              </div>
+
+              <button
+                onClick={() => setFlaggedQuestions(
+                  flaggedQuestions.includes(currentExamQuestion)
+                    ? flaggedQuestions.filter(q => q !== currentExamQuestion)
+                    : [...flaggedQuestions, currentExamQuestion]
+                )}
+                style={{
+                  ...S.secondaryBtn,
+                  width: '100%',
+                  backgroundColor: flaggedQuestions.includes(currentExamQuestion) ? '#fef3c7' : '#fff'
+                }}
+              >
+                {flaggedQuestions.includes(currentExamQuestion) ? '🚩 Marcată pentru review' : '🏴 Marchează pentru review'}
+              </button>
+            </div>
+          );
+        }
+      }
+
+      // SESSION SUMMARY MODAL
+      if (showSessionSummary) {
+        const sessionDuration = Math.floor((Date.now() - sessionStartTime) / 1000);
+        const minutes = Math.floor(sessionDuration / 60);
+        const seconds = sessionDuration % 60;
+        const avgRating = sessionStats.ratings.length > 0
+          ? (sessionStats.ratings.reduce((a, b) => a + b, 0) / sessionStats.ratings.length).toFixed(1)
+          : 0;
+
+        return (
+          <div style={{
+            position: 'fixed',
+            top: 0,
+            left: 0,
+            right: 0,
+            bottom: 0,
+            backgroundColor: 'rgba(0,0,0,0.5)',
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+            zIndex: 1000,
+            padding: 20
+          }}>
+            <div style={{
+              backgroundColor: '#fff',
+              borderRadius: 16,
+              padding: 32,
+              maxWidth: 500,
+              width: '100%',
+              boxShadow: '0 20px 60px rgba(0,0,0,0.3)'
+            }}>
+              <div style={{fontSize: 48, textAlign: 'center', marginBottom: 16}}>🎉</div>
+              <h2 style={{fontSize: 24, fontWeight: 700, color: '#334155', textAlign: 'center', marginBottom: 24}}>
+                Sesiune Completată!
+              </h2>
+
+              <div style={{display: 'grid', gridTemplateColumns: 'repeat(2, 1fr)', gap: 16, marginBottom: 24}}>
+                <div style={{backgroundColor: '#f0fdf4', padding: 16, borderRadius: 12, textAlign: 'center'}}>
+                  <div style={{fontSize: 32, fontWeight: 700, color: '#16a34a'}}>{sessionStats.studied}</div>
+                  <div style={{fontSize: 13, color: '#166534'}}>Carduri studiate</div>
+                </div>
+                <div style={{backgroundColor: '#fef3c7', padding: 16, borderRadius: 12, textAlign: 'center'}}>
+                  <div style={{fontSize: 32, fontWeight: 700, color: '#f59e0b'}}>{sessionStats.xpEarned}</div>
+                  <div style={{fontSize: 13, color: '#a16207'}}>XP câștigate</div>
+                </div>
+                <div style={{backgroundColor: '#dbeafe', padding: 16, borderRadius: 12, textAlign: 'center'}}>
+                  <div style={{fontSize: 32, fontWeight: 700, color: '#3b82f6'}}>{avgRating}</div>
+                  <div style={{fontSize: 13, color: '#1e40af'}}>Rating mediu</div>
+                </div>
+                <div style={{backgroundColor: '#f3e8ff', padding: 16, borderRadius: 12, textAlign: 'center'}}>
+                  <div style={{fontSize: 32, fontWeight: 700, color: '#a855f7'}}>{minutes}:{String(seconds).padStart(2, '0')}</div>
+                  <div style={{fontSize: 13, color: '#7c3aed'}}>Timp petrecut</div>
+                </div>
+              </div>
+
+              <div style={{
+                backgroundColor: '#f8fafc',
+                padding: 16,
+                borderRadius: 12,
+                marginBottom: 20
+              }}>
+                <div style={{fontSize: 14, fontWeight: 600, color: '#64748b', marginBottom: 8}}>
+                  Performanță:
+                </div>
+                <div style={{display: 'flex', gap: 8}}>
+                  {[1, 2, 3, 4, 5].map(rating => {
+                    const count = sessionStats.ratings.filter(r => r === rating).length;
+                    const percentage = sessionStats.ratings.length > 0
+                      ? Math.round((count / sessionStats.ratings.length) * 100)
+                      : 0;
+                    return (
+                      <div key={rating} style={{flex: 1, textAlign: 'center'}}>
+                        <div style={{fontSize: 18, marginBottom: 4}}>{rating === 1 ? '😞' : rating === 2 ? '😕' : rating === 3 ? '😐' : rating === 4 ? '😊' : '😄'}</div>
+                        <div style={{fontSize: 11, color: '#64748b'}}>{percentage}%</div>
+                      </div>
+                    );
+                  })}
+                </div>
+              </div>
+
+              <button
+                onClick={() => {
+                  setShowSessionSummary(false);
+                  setView('dashboard');
+                }}
+                style={{
+                  width: '100%',
+                  padding: '14px',
+                  backgroundColor: '#3b82f6',
+                  color: '#fff',
+                  border: 'none',
+                  borderRadius: 12,
+                  fontSize: 16,
+                  fontWeight: 600,
+                  cursor: 'pointer'
+                }}
+              >
+                Înapoi la Dashboard
+              </button>
+            </div>
+          </div>
+        );
+      }
+
       // DASHBOARD VIEW
       const totalDue = getCardsForReview(cards).length;
       const totalMastered = cards.filter(c => c.repetitions >= 3).length;
       const difficultCards = cards.filter(c => c.isDifficult);
 
+      // 🏆 Calculate gamification display values
+      const currentLevel = getCurrentLevel(xp);
+      const nextLevel = getNextLevel(xp);
+      const xpProgress = nextLevel
+        ? ((xp - currentLevel.minXP) / (nextLevel.minXP - currentLevel.minXP)) * 100
+        : 100;
+
       return (
-        <div style={S.container}>
+        <div style={{...S.container, backgroundColor: darkMode ? '#1a1a1a' : '#faf9f7', transition: 'background-color 0.3s'}}>
           <div style={S.header}>
-            <h1 style={S.title}>🧠 Neuroștiințe UBB - Improved</h1>
-            <p style={S.subtitle}>{cards.length} carduri · Progres salvat automat</p>
+            <div style={{display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: 8}}>
+              <h1 style={{...S.title, color: darkMode ? '#e5e5e5' : '#1f2937'}}>🧠 Neuroștiințe UBB - Improved</h1>
+              <button
+                onClick={() => setDarkMode(!darkMode)}
+                style={{
+                  padding: '8px 16px',
+                  borderRadius: 20,
+                  border: darkMode ? '1px solid #404040' : '1px solid #e5e7eb',
+                  backgroundColor: darkMode ? '#2d2d2d' : '#fff',
+                  color: darkMode ? '#e5e5e5' : '#6b7280',
+                  cursor: 'pointer',
+                  fontSize: 14,
+                  fontWeight: 500,
+                  transition: 'all 0.3s'
+                }}
+              >
+                {darkMode ? '☀️ Light' : '🌙 Dark'}
+              </button>
+            </div>
+            <p style={{...S.subtitle, color: darkMode ? '#a3a3a3' : '#6b7280'}}>{cards.length} carduri · Progres salvat automat</p>
           </div>
+
+          {/* 🏆 LEVEL & XP BAR */}
+          <div style={{
+            backgroundColor: '#fff',
+            borderRadius: 12,
+            padding: 16,
+            marginBottom: 20,
+            border: '2px solid',
+            borderColor: currentLevel.color,
+            boxShadow: '0 4px 6px rgba(0,0,0,0.1)'
+          }}>
+            <div style={{display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: 10}}>
+              <div style={{display: 'flex', alignItems: 'center', gap: 8}}>
+                <div style={{
+                  padding: '6px 12px',
+                  borderRadius: 20,
+                  backgroundColor: currentLevel.color,
+                  color: '#fff',
+                  fontWeight: 700,
+                  fontSize: 14
+                }}>
+                  Nivel {currentLevel.level} · {currentLevel.name}
+                </div>
+                {currentStreak > 0 && (
+                  <div style={{
+                    padding: '6px 12px',
+                    borderRadius: 20,
+                    backgroundColor: '#fef3c7',
+                    color: '#f59e0b',
+                    fontWeight: 700,
+                    fontSize: 14
+                  }}>
+                    🔥 {currentStreak} {currentStreak === 1 ? 'zi' : 'zile'}
+                  </div>
+                )}
+              </div>
+              <div style={{fontSize: 13, color: '#64748b', fontWeight: 600}}>
+                {xp} XP {nextLevel && `/ ${nextLevel.minXP} XP`}
+              </div>
+            </div>
+            {nextLevel && (
+              <div style={{
+                width: '100%',
+                height: 12,
+                backgroundColor: '#e2e8f0',
+                borderRadius: 6,
+                overflow: 'hidden'
+              }}>
+                <div style={{
+                  width: `${xpProgress}%`,
+                  height: '100%',
+                  backgroundColor: currentLevel.color,
+                  transition: 'width 0.3s ease'
+                }} />
+              </div>
+            )}
+            <div style={{marginTop: 10, fontSize: 13, color: '#64748b'}}>
+              🎯 Obiectiv zilnic: {cardsStudiedToday}/{dailyGoal} carduri {cardsStudiedToday >= dailyGoal && '✅'}
+            </div>
+          </div>
+
+          {/* 📊 STUDY STATISTICS WIDGET */}
+          <div style={{
+            backgroundColor: darkMode ? '#2d2d2d' : '#fff',
+            borderRadius: 12,
+            padding: 16,
+            marginBottom: 20,
+            border: '2px solid',
+            borderColor: darkMode ? '#404040' : '#e2e8f0',
+            transition: 'all 0.3s'
+          }}>
+            <div style={{fontSize: 14, fontWeight: 600, color: darkMode ? '#e5e5e5' : '#334155', marginBottom: 12}}>
+              📊 Statistici Studiu Astăzi
+            </div>
+            <div style={{display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: 12}}>
+              <div style={{textAlign: 'center'}}>
+                <div style={{fontSize: 24, fontWeight: 700, color: '#3b82f6'}}>{cardsStudiedToday}</div>
+                <div style={{fontSize: 11, color: darkMode ? '#a3a3a3' : '#64748b'}}>Carduri</div>
+              </div>
+              <div style={{textAlign: 'center'}}>
+                <div style={{fontSize: 24, fontWeight: 700, color: '#f59e0b'}}>{currentStreak}</div>
+                <div style={{fontSize: 11, color: darkMode ? '#a3a3a3' : '#64748b'}}>Streak</div>
+              </div>
+              <div style={{textAlign: 'center'}}>
+                <div style={{fontSize: 24, fontWeight: 700, color: '#22c55e'}}>{totalMastered}</div>
+                <div style={{fontSize: 11, color: darkMode ? '#a3a3a3' : '#64748b'}}>Stăpânite</div>
+              </div>
+              <div style={{textAlign: 'center'}}>
+                <div style={{fontSize: 24, fontWeight: 700, color: '#a855f7'}}>{totalDue}</div>
+                <div style={{fontSize: 11, color: darkMode ? '#a3a3a3' : '#64748b'}}>De repetat</div>
+              </div>
+            </div>
+            {cardsStudiedToday >= dailyGoal && (
+              <div style={{
+                marginTop: 12,
+                padding: 8,
+                backgroundColor: '#f0fdf4',
+                borderRadius: 8,
+                textAlign: 'center',
+                fontSize: 13,
+                color: '#166534',
+                fontWeight: 600
+              }}>
+                🎉 Obiectiv zilnic atins!
+              </div>
+            )}
+          </div>
+
+          {/* Achievement Popup */}
+          {newAchievement && (
+            <div style={{
+              position: 'fixed',
+              top: 20,
+              left: '50%',
+              transform: 'translateX(-50%)',
+              backgroundColor: '#fef3c7',
+              border: '3px solid #fbbf24',
+              borderRadius: 12,
+              padding: 20,
+              boxShadow: '0 10px 25px rgba(0,0,0,0.2)',
+              zIndex: 1000,
+              minWidth: 300,
+              textAlign: 'center',
+              animation: 'slideDown 0.3s ease'
+            }}>
+              <div style={{fontSize: 48, marginBottom: 10}}>{newAchievement.icon}</div>
+              <div style={{fontSize: 18, fontWeight: 700, color: '#92400e', marginBottom: 5}}>
+                Realizare Deblocată!
+              </div>
+              <div style={{fontSize: 16, fontWeight: 600, color: '#78350f', marginBottom: 5}}>
+                {newAchievement.name}
+              </div>
+              <div style={{fontSize: 13, color: '#a16207'}}>
+                {newAchievement.desc}
+              </div>
+              <div style={{fontSize: 14, fontWeight: 700, color: '#ea580c', marginTop: 8}}>
+                +{newAchievement.xp} XP
+              </div>
+            </div>
+          )}
 
           <div style={S.timerSection}>
             <div style={S.timerDisplay}>{formatTimer(timer)}</div>
@@ -1207,6 +2933,26 @@
 
           <button onClick={() => setView('search')} style={{...S.secondaryBtn, width: '100%', marginBottom: 20, padding: '12px'}}>
             🔍 Caută în carduri
+          </button>
+
+          <button onClick={() => setView('mnemonics')} style={{...S.secondaryBtn, width: '100%', marginBottom: 20, padding: '12px', backgroundColor: '#f3e8ff', borderColor: '#a855f7'}}>
+            🧩 Mnemonice ({MNEMONICS.length} disponibile)
+          </button>
+
+          <button onClick={() => setView('achievements')} style={{...S.secondaryBtn, width: '100%', marginBottom: 20, padding: '12px', backgroundColor: '#fef3c7', borderColor: '#fbbf24'}}>
+            🏆 Realizări ({unlockedAchievements.length}/{ACHIEVEMENTS.length})
+          </button>
+
+          <button onClick={() => setView('diagrams')} style={{...S.secondaryBtn, width: '100%', marginBottom: 20, padding: '12px', backgroundColor: '#dbeafe', borderColor: '#3b82f6'}}>
+            🎨 Diagrame Interactive ({DIAGRAMS.length} disponibile)
+          </button>
+
+          <button onClick={() => generateExam(50)} style={{...S.primaryBtn, width: '100%', marginBottom: 20, padding: '14px', backgroundColor: '#f97316'}}>
+            📝 Examen Simulare (50 întrebări · 90 min)
+          </button>
+
+          <button onClick={() => setView('analytics')} style={{...S.secondaryBtn, width: '100%', marginBottom: 20, padding: '12px', backgroundColor: '#e0f2fe', borderColor: '#0ea5e9'}}>
+            📊 Analytics & Statistici
           </button>
 
           <div style={S.section}>
