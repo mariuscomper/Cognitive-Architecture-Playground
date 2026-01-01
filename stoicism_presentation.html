@@ -1,0 +1,1454 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stoicism: Philosophy for Modern Resilience</title>
+    <script src="https://statics.moonshot.cn/kimi-ppt/html-gen/static/tailwindcss@4_0805.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Quattrocento:wght@400;700&family=Oranienbaum&family=Quattrocento+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.0.0/css/all.min.css" rel="stylesheet">
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/echarts@5.4.0/dist/echarts.min.js"></script>
+    <script src="https://cdn.jsdmirror.com/npm/mathjax@3.2.2/es5/tex-svg.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style type="text/tailwindcss">
+        @layer utilities {
+            .ppt-slide {
+                @apply relative w-full max-w-[1280px] mx-auto p-[40px] box-border overflow-hidden mb-[40px];
+                aspect-ratio: 16 / 9;
+            }
+        }
+    </style>
+    <style>
+        body {
+            color: #E0DCD7;
+            font-family: 'Quattrocento Sans', sans-serif;
+            overflow-x: hidden;
+        }
+        .font-display {
+            font-family: 'Quattrocento', serif;
+        }
+        .font-heading-alt {
+            font-family: 'Oranienbaum', serif;
+        }
+
+        /* Responsive scaling for smaller screens */
+        @media (max-width: 1280px) {
+            .ppt-slide {
+                font-size: calc(16px * (100vw / 1280));
+            }
+        }
+
+        /* Prevent horizontal overflow */
+        * {
+            box-sizing: border-box;
+            max-width: 100%;
+        }
+
+        html {
+            overflow-x: hidden;
+        }
+
+        /* Ensure all content inside slides stays within bounds */
+        .ppt-slide > * {
+            max-width: 100%;
+        }
+
+        .ppt-slide p,
+        .ppt-slide h1,
+        .ppt-slide h2,
+        .ppt-slide h3,
+        .ppt-slide h4,
+        .ppt-slide div {
+            word-wrap: break-word;
+            overflow-wrap: break-word;
+        }
+
+        /* Adjust grid layouts to be responsive */
+        @media (max-width: 768px) {
+            .ppt-slide {
+                padding: 20px !important;
+            }
+        }
+
+        /* Reduce spacing to prevent content overflow */
+        .ppt-slide .grid {
+            gap: 0.75rem !important;
+        }
+
+        .ppt-slide .bg-\[#3A3A3A\]\/40,
+        .ppt-slide .bg-\[#3A3A3A\]\/30 {
+            padding: 0.875rem !important;
+        }
+
+        .ppt-slide .bg-\[#2B2B2B\]\/60 {
+            padding: 0.5rem !important;
+            margin-top: 0.5rem !important;
+        }
+
+        .ppt-slide .bg-\[#C49A6C\]\/20 {
+            padding: 0.75rem !important;
+            margin-top: 0.75rem !important;
+        }
+
+        .ppt-slide .mb-5 {
+            margin-bottom: 0.75rem !important;
+        }
+
+        .ppt-slide .mb-3 {
+            margin-bottom: 0.5rem !important;
+        }
+
+        .ppt-slide .mb-2 {
+            margin-bottom: 0.375rem !important;
+        }
+
+        .ppt-slide .leading-relaxed {
+            line-height: 1.4 !important;
+        }
+
+        /* Reduce text sizes slightly to fit content */
+        .ppt-slide .text-5xl {
+            font-size: 2.5rem !important;
+            line-height: 1.1 !important;
+        }
+
+        .ppt-slide .text-2xl {
+            font-size: 1.35rem !important;
+        }
+
+        .ppt-slide .text-xl {
+            font-size: 1.1rem !important;
+        }
+
+        .ppt-slide .text-lg {
+            font-size: 1rem !important;
+        }
+
+        .ppt-slide .text-base {
+            font-size: 0.875rem !important;
+        }
+    </style>
+</head>
+
+<body class="bg-gray-50 py-8">
+    <!-- Slide 1: Cover -->
+    <div class="ppt-slide !bg-[#2B2B2B]" type="cover">
+        <img src="stoicism_cover.png" alt="Cover" class="absolute inset-0 w-full h-full object-cover opacity-60">
+        <div class="absolute inset-0 bg-gradient-to-br from-[#2B2B2B]/90 via-[#2B2B2B]/70 to-transparent"></div>
+        <div class="relative h-full flex flex-col justify-center items-start z-10">
+            <div class="max-w-3xl">
+                <h1 class="font-display text-7xl font-bold text-[#E0DCD7] leading-tight mb-6">Stoicism</h1>
+                <p class="font-heading-alt text-5xl text-[#C49A6C] mb-8">Philosophy for Modern Resilience</p>
+                <div class="h-1 w-32 bg-[#C49A6C] mb-6"></div>
+                <p class="text-2xl text-[#A8A39D] leading-relaxed">Ancient Wisdom for Contemporary Challenges</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Slide 2: Table of Contents -->
+    <div class="ppt-slide !bg-[#2B2B2B]" type="table_of_contents">
+        <div class="h-full flex flex-col">
+            <div class="mb-8">
+                <h2 class="font-display text-5xl font-bold text-[#E0DCD7] mb-3">Contents</h2>
+                <div class="h-1 w-24 bg-[#C49A6C]"></div>
+            </div>
+            
+            <div class="flex-1 space-y-5">
+                <div class="flex items-start gap-6 p-6 border-l-4 border-[#C49A6C] bg-[#3A3A3A]/30">
+                    <div class="w-16 h-16 rounded-full bg-[#C49A6C] flex items-center justify-center flex-shrink-0">
+                        <span class="font-display text-3xl font-bold text-[#2B2B2B]">01</span>
+                    </div>
+                    <div class="flex-1">
+                        <h3 class="font-heading-alt text-3xl font-bold text-[#E0DCD7] mb-2">The Foundation</h3>
+                        <p class="text-xl text-[#A8A39D] leading-relaxed">Understanding Stoicism's origins, key figures, and core principles including the Four Cardinal Virtues and the Dichotomy of Control</p>
+                    </div>
+                </div>
+
+                <div class="flex items-start gap-6 p-6 border-l-4 border-[#5C6D67] bg-[#3A3A3A]/30">
+                    <div class="w-16 h-16 rounded-full bg-[#5C6D67] flex items-center justify-center flex-shrink-0">
+                        <span class="font-display text-3xl font-bold text-[#E0DCD7]">02</span>
+                    </div>
+                    <div class="flex-1">
+                        <h3 class="font-heading-alt text-3xl font-bold text-[#E0DCD7] mb-2">The Practice</h3>
+                        <p class="text-xl text-[#A8A39D] leading-relaxed">Daily Stoic exercises including Premeditatio Malorum, journaling, and mindfulness practices for modern resilience</p>
+                    </div>
+                </div>
+
+                <div class="flex items-start gap-6 p-6 border-l-4 border-[#C49A6C] bg-[#3A3A3A]/30">
+                    <div class="w-16 h-16 rounded-full bg-[#C49A6C] flex items-center justify-center flex-shrink-0">
+                        <span class="font-display text-3xl font-bold text-[#2B2B2B]">03</span>
+                    </div>
+                    <div class="flex-1">
+                        <h3 class="font-heading-alt text-3xl font-bold text-[#E0DCD7] mb-2">The Science</h3>
+                        <p class="text-xl text-[#A8A39D] leading-relaxed">Stoicism's influence on cognitive behavioral therapy, research evidence, and applications to digital wellness</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Slide 3: Chapter 1 -->
+    <div class="ppt-slide !bg-[#2B2B2B]" type="chapter">
+        <img src="chapter1_foundation.png" alt="Chapter 1" class="absolute inset-0 w-full h-full object-cover opacity-50">
+        <div class="absolute inset-0 bg-gradient-to-r from-[#2B2B2B] via-[#2B2B2B]/85 to-transparent"></div>
+        <div class="relative h-full flex items-center z-10">
+            <div class="max-w-2xl">
+                <div class="mb-6">
+                    <span class="font-display text-9xl font-bold text-[#C49A6C]">01</span>
+                </div>
+                <h2 class="font-heading-alt text-7xl font-bold text-[#E0DCD7] mb-6">The Foundation</h2>
+                <div class="h-1 w-48 bg-[#C49A6C] mb-8"></div>
+                <p class="text-3xl text-[#A8A39D] leading-relaxed">Understanding Stoicism's Origins and Core Principles</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Slide 4: What is Stoicism? -->
+    <div class="ppt-slide !bg-[#2B2B2B]" type="content">
+        <div class="h-full flex flex-col">
+            <div class="mb-6">
+                <h2 class="font-display text-5xl font-bold text-[#E0DCD7] mb-3">What is Stoicism?</h2>
+                <div class="h-1 w-24 bg-[#C49A6C]"></div>
+            </div>
+
+            <div class="flex-1 flex gap-6">
+                <div class="flex-1 flex flex-col gap-6">
+                    <div class="bg-[#3A3A3A]/40 p-6 rounded-lg border-l-4 border-[#C49A6C] flex-1 flex flex-col justify-center">
+                        <div class="flex items-center gap-3 mb-4">
+                            <i class="fas fa-compass text-3xl text-[#C49A6C]"></i>
+                            <h3 class="font-heading-alt text-2xl font-bold text-[#E0DCD7]">A Practical Philosophy</h3>
+                        </div>
+                        <p class="text-lg text-[#E0DCD7] leading-relaxed mb-3"><strong>Stoicism is not abstract theory—it's a living practice.</strong> Founded by Zeno of Citium in 301 BCE, it teaches that the path to happiness (eudaimonia) lies in virtue, self-control, and living in harmony with nature and reason.</p>
+                        <p class="text-lg text-[#A8A39D] leading-relaxed">Unlike philosophies that focus on complex metaphysics, Stoicism offers concrete tools for daily resilience, emotional regulation, and ethical living.</p>
+                    </div>
+
+                    <div class="bg-[#3A3A3A]/40 p-6 rounded-lg border-l-4 border-[#5C6D67] flex-1 flex flex-col justify-center">
+                        <div class="flex items-center gap-3 mb-4">
+                            <i class="fas fa-anchor text-3xl text-[#5C6D67]"></i>
+                            <h3 class="font-heading-alt text-2xl font-bold text-[#E0DCD7]">The Core Insight</h3>
+                        </div>
+                        <p class="text-lg text-[#E0DCD7] leading-relaxed mb-3"><strong>Stoicism distinguishes between what we control and what we don't.</strong> Our thoughts, judgments, and actions are ours to direct. External events—other people's opinions, the weather, outcomes—are not.</p>
+                        <p class="text-lg text-[#A8A39D] leading-relaxed">This simple but profound distinction liberates us from anxiety about the uncontrollable and focuses our energy where it matters most: on our own virtue and choices.</p>
+                    </div>
+                </div>
+
+                <div class="w-96 flex flex-col gap-6">
+                    <div class="bg-[#C49A6C]/20 p-6 rounded-lg flex-1 flex flex-col justify-center">
+                        <div class="text-center mb-4">
+                            <i class="fas fa-quote-left text-4xl text-[#C49A6C] mb-4"></i>
+                        </div>
+                        <p class="text-2xl text-[#E0DCD7] leading-relaxed font-heading-alt text-center mb-4">"You have power over your mind—not outside events. Realize this, and you will find strength."</p>
+                        <p class="text-xl text-[#C49A6C] text-center">— Marcus Aurelius</p>
+                    </div>
+
+                    <div class="bg-[#3A3A3A]/40 p-6 rounded-lg">
+                        <h4 class="font-display text-xl font-bold text-[#C49A6C] mb-4">Key Principles</h4>
+                        <div class="space-y-3">
+                            <div class="flex items-start gap-3">
+                                <i class="fas fa-check-circle text-[#C49A6C] text-lg mt-1"></i>
+                                <div>
+                                    <p class="text-base text-[#E0DCD7] font-semibold">Virtue is the highest good</p>
+                                    <p class="text-sm text-[#A8A39D]">Wisdom, courage, justice, temperance</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start gap-3">
+                                <i class="fas fa-check-circle text-[#C49A6C] text-lg mt-1"></i>
+                                <div>
+                                    <p class="text-base text-[#E0DCD7] font-semibold">Focus on what you control</p>
+                                    <p class="text-sm text-[#A8A39D]">Judgments, desires, actions</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start gap-3">
+                                <i class="fas fa-check-circle text-[#C49A6C] text-lg mt-1"></i>
+                                <div>
+                                    <p class="text-base text-[#E0DCD7] font-semibold">Accept what happens</p>
+                                    <p class="text-sm text-[#A8A39D]">Amor fati—love what is</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start gap-3">
+                                <i class="fas fa-check-circle text-[#C49A6C] text-lg mt-1"></i>
+                                <div>
+                                    <p class="text-base text-[#E0DCD7] font-semibold">Practice daily</p>
+                                    <p class="text-sm text-[#A8A39D]">Journaling, reflection, mindfulness</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Slide 5: Stoic Timeline -->
+    <div class="ppt-slide !bg-[#2B2B2B]" type="content">
+        <div class="h-full flex flex-col">
+            <div class="mb-5">
+                <h2 class="font-display text-5xl font-bold text-[#E0DCD7] mb-3">The Stoic Timeline</h2>
+                <p class="text-xl text-[#A8A39D]">From Zeno to Marcus Aurelius: Six Centuries of Philosophical Evolution</p>
+                <div class="h-1 w-24 bg-[#C49A6C] mt-3"></div>
+            </div>
+
+            <div class="flex-1 relative">
+                <div class="absolute left-0 top-0 bottom-0 w-1 bg-[#C49A6C]"></div>
+                
+                <div class="h-full flex flex-col justify-between pl-12">
+                    <div class="relative">
+                        <div class="absolute -left-12 top-0 w-8 h-8 rounded-full bg-[#C49A6C] border-4 border-[#2B2B2B]"></div>
+                        <div class="flex gap-6 items-start">
+                            <div class="w-32 flex-shrink-0">
+                                <span class="font-display text-3xl font-bold text-[#C49A6C]">334-262 BCE</span>
+                            </div>
+                            <div class="flex-1 bg-[#3A3A3A]/40 p-5 rounded-lg">
+                                <h3 class="font-heading-alt text-2xl font-bold text-[#E0DCD7] mb-2">Zeno of Citium</h3>
+                                <p class="text-base text-[#A8A39D] leading-relaxed mb-2"><strong>Founder of Stoicism.</strong> Taught in the Stoa Poikile (painted porch) in Athens. Established the core doctrine that virtue is the only true good and that we should live in harmony with nature.</p>
+                                <p class="text-base text-[#E0DCD7]"><strong>Key insight:</strong> Happiness comes from virtue, not external goods like wealth or reputation.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="relative">
+                        <div class="absolute -left-12 top-0 w-8 h-8 rounded-full bg-[#5C6D67] border-4 border-[#2B2B2B]"></div>
+                        <div class="flex gap-6 items-start">
+                            <div class="w-32 flex-shrink-0">
+                                <span class="font-display text-3xl font-bold text-[#5C6D67]">330-230 BCE</span>
+                            </div>
+                            <div class="flex-1 bg-[#3A3A3A]/40 p-5 rounded-lg">
+                                <h3 class="font-heading-alt text-2xl font-bold text-[#E0DCD7] mb-2">Cleanthes & Chrysippus</h3>
+                                <p class="text-base text-[#A8A39D] leading-relaxed mb-2"><strong>System builders.</strong> The second and third heads of the Stoic school. Cleanthes emphasized assenting to reason. Chrysippus developed Stoic logic, ethics, and physics, expanding the doctrine into a comprehensive system.</p>
+                                <p class="text-base text-[#E0DCD7]"><strong>Legacy:</strong> Chrysippus was so influential that "If Chrysippus had not existed, neither would the Stoa."</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="relative">
+                        <div class="absolute -left-12 top-0 w-8 h-8 rounded-full bg-[#C49A6C] border-4 border-[#2B2B2B]"></div>
+                        <div class="flex gap-6 items-start">
+                            <div class="w-32 flex-shrink-0">
+                                <span class="font-display text-3xl font-bold text-[#C49A6C]">4 BCE-65 CE</span>
+                            </div>
+                            <div class="flex-1 bg-[#3A3A3A]/40 p-5 rounded-lg">
+                                <h3 class="font-heading-alt text-2xl font-bold text-[#E0DCD7] mb-2">Seneca the Younger</h3>
+                                <p class="text-base text-[#A8A39D] leading-relaxed mb-2"><strong>The practical philosopher.</strong> Roman statesman and dramatist who wrote accessible essays and letters about applying Stoicism to daily life. Emphasized the shortness of life and the importance of philosophy.</p>
+                                <p class="text-base text-[#E0DCD7]"><strong>Teaching:</strong> "It is not that we have a short time to live, but that we waste a lot of it."</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="relative">
+                        <div class="absolute -left-12 top-0 w-8 h-8 rounded-full bg-[#5C6D67] border-4 border-[#2B2B2B]"></div>
+                        <div class="flex gap-6 items-start">
+                            <div class="w-32 flex-shrink-0">
+                                <span class="font-display text-3xl font-bold text-[#5C6D67]">50-135 CE</span>
+                            </div>
+                            <div class="flex-1 bg-[#3A3A3A]/40 p-5 rounded-lg">
+                                <h3 class="font-heading-alt text-2xl font-bold text-[#E0DCD7] mb-2">Epictetus</h3>
+                                <p class="text-base text-[#A8A39D] leading-relaxed mb-2"><strong>The teacher of freedom.</strong> Born a slave, became one of Rome's greatest philosophers. Taught that true freedom comes from within, emphasizing the dichotomy of control and self-mastery.</p>
+                                <p class="text-base text-[#E0DCD7]"><strong>Core teaching:</strong> "It's not what happens to you, but how you react to it that matters."</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="relative">
+                        <div class="absolute -left-12 top-0 w-8 h-8 rounded-full bg-[#C49A6C] border-4 border-[#2B2B2B]"></div>
+                        <div class="flex gap-6 items-start">
+                            <div class="w-32 flex-shrink-0">
+                                <span class="font-display text-3xl font-bold text-[#C49A6C]">121-180 CE</span>
+                            </div>
+                            <div class="flex-1 bg-[#3A3A3A]/40 p-5 rounded-lg">
+                                <h3 class="font-heading-alt text-2xl font-bold text-[#E0DCD7] mb-2">Marcus Aurelius</h3>
+                                <p class="text-base text-[#A8A39D] leading-relaxed mb-2"><strong>The philosopher emperor.</strong> Roman Emperor from 161-180 CE. His private journal, Meditations, reveals a man struggling to maintain virtue under immense pressure. The most powerful man in the world, practicing humility and duty.</p>
+                                <p class="text-base text-[#E0DCD7]"><strong>Inspiration:</strong> "The impediment to action advances action. What stands in the way becomes the way."</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Slide 6: The Four Cardinal Virtues -->
+    <div class="ppt-slide !bg-[#2B2B2B]" type="content">
+        <div class="h-full flex flex-col">
+            <div class="mb-5">
+                <h2 class="font-display text-5xl font-bold text-[#E0DCD7] mb-3">The Four Cardinal Virtues</h2>
+                <p class="text-xl text-[#A8A39D]">The Pillars of Stoic Ethics and the Foundation of the Good Life</p>
+                <div class="h-1 w-24 bg-[#C49A6C] mt-3"></div>
+            </div>
+
+            <div class="flex-1 grid grid-cols-2 gap-5">
+                <div class="bg-[#3A3A3A]/40 p-5 rounded-lg border-t-4 border-[#C49A6C] flex flex-col">
+                    <div class="flex items-center gap-3 mb-3">
+                        <div class="w-12 h-12 rounded-full bg-[#C49A6C] flex items-center justify-center flex-shrink-0">
+                            <i class="fas fa-brain text-xl text-[#2B2B2B]"></i>
+                        </div>
+                        <h3 class="font-heading-alt text-2xl font-bold text-[#E0DCD7]">Wisdom</h3>
+                    </div>
+                    <p class="text-lg text-[#E0DCD7] font-semibold mb-2">Seeing Reality Clearly</p>
+                    <p class="text-base text-[#A8A39D] leading-relaxed flex-1">The ability to make sound decisions by understanding what's truly good, bad, and indifferent. Wisdom means seeing reality as it is, not as our biases distort it. It's about focusing on what we control and accepting what we don't.</p>
+                    <div class="bg-[#2B2B2B]/60 p-3 rounded mt-3">
+                        <p class="text-base text-[#E0DCD7]"><strong>Practice:</strong> "What's in my control here?" Pause before reacting. Examine facts before judgments.</p>
+                    </div>
+                </div>
+
+                <div class="bg-[#3A3A3A]/40 p-5 rounded-lg border-t-4 border-[#5C6D67] flex flex-col">
+                    <div class="flex items-center gap-3 mb-3">
+                        <div class="w-12 h-12 rounded-full bg-[#5C6D67] flex items-center justify-center flex-shrink-0">
+                            <i class="fas fa-shield-alt text-xl text-[#E0DCD7]"></i>
+                        </div>
+                        <h3 class="font-heading-alt text-2xl font-bold text-[#E0DCD7]">Courage</h3>
+                    </div>
+                    <p class="text-lg text-[#E0DCD7] font-semibold mb-2">Acting Rightly Despite Fear</p>
+                    <p class="text-base text-[#A8A39D] leading-relaxed flex-1">Not just physical bravery, but moral courage—the strength to act according to your principles even when it's difficult, unpopular, or dangerous. Courage means standing firm in life's uncertainties without compromising virtue.</p>
+                    <div class="bg-[#2B2B2B]/60 p-3 rounded mt-3">
+                        <p class="text-base text-[#E0DCD7]"><strong>Practice:</strong> Speak up for what's right. Face fears incrementally. View challenges as growth opportunities.</p>
+                    </div>
+                </div>
+
+                <div class="bg-[#3A3A3A]/40 p-5 rounded-lg border-t-4 border-[#C49A6C] flex flex-col">
+                    <div class="flex items-center gap-3 mb-3">
+                        <div class="w-12 h-12 rounded-full bg-[#C49A6C] flex items-center justify-center flex-shrink-0">
+                            <i class="fas fa-balance-scale text-xl text-[#2B2B2B]"></i>
+                        </div>
+                        <h3 class="font-heading-alt text-2xl font-bold text-[#E0DCD7]">Justice</h3>
+                    </div>
+                    <p class="text-lg text-[#E0DCD7] font-semibold mb-2">Treating Others Fairly</p>
+                    <p class="text-base text-[#A8A39D] leading-relaxed flex-1">Marcus Aurelius called justice "the source of all other virtues." It's about acting fairly and kindly toward others, recognizing our shared humanity. Justice means contributing to the common good, not just pursuing self-interest.</p>
+                    <div class="bg-[#2B2B2B]/60 p-3 rounded mt-3">
+                        <p class="text-base text-[#E0DCD7]"><strong>Practice:</strong> "What injures the hive injures the bee." Treat others as ends, not means. Build community.</p>
+                    </div>
+                </div>
+
+                <div class="bg-[#3A3A3A]/40 p-5 rounded-lg border-t-4 border-[#5C6D67] flex flex-col">
+                    <div class="flex items-center gap-3 mb-3">
+                        <div class="w-12 h-12 rounded-full bg-[#5C6D67] flex items-center justify-center flex-shrink-0">
+                            <i class="fas fa-hand-paper text-xl text-[#E0DCD7]"></i>
+                        </div>
+                        <h3 class="font-heading-alt text-2xl font-bold text-[#E0DCD7]">Temperance</h3>
+                    </div>
+                    <p class="text-lg text-[#E0DCD7] font-semibold mb-2">Self-Control and Moderation</p>
+                    <p class="text-base text-[#A8A39D] leading-relaxed flex-1">Finding balance and avoiding excess. Temperance means choosing long-term well-being over short-term satisfaction. It's the ability to manage desires and emotions rather than being controlled by them.</p>
+                    <div class="bg-[#2B2B2B]/60 p-3 rounded mt-3">
+                        <p class="text-base text-[#E0DCD7]"><strong>Practice:</strong> "Having what is enough." Set boundaries on habits. Resist impulses. Seek simplicity.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-4 bg-[#C49A6C]/20 p-4 rounded-lg">
+                <p class="text-lg text-[#E0DCD7] text-center"><strong>The Unity of the Virtues:</strong> The Stoics taught that the virtues are interconnected. You cannot fully have one without the others. Acting with justice requires the wisdom to know what's fair, the courage to stand by it, and the temperance to avoid overreacting.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Slide 7: The Dichotomy of Control -->
+    <div class="ppt-slide !bg-[#2B2B2B]" type="content">
+        <div class="h-full flex flex-col">
+            <div class="mb-5">
+                <h2 class="font-display text-5xl font-bold text-[#E0DCD7] mb-3">The Dichotomy of Control</h2>
+                <p class="text-xl text-[#A8A39D]">Epictetus' Foundational Teaching: The Source of Freedom and Peace</p>
+                <div class="h-1 w-24 bg-[#C49A6C] mt-3"></div>
+            </div>
+
+            <div class="flex-1 flex gap-6">
+                <div class="flex-1 bg-[#3A3A3A]/40 p-6 rounded-lg border-l-4 border-[#C49A6C] flex flex-col">
+                    <h3 class="font-heading-alt text-3xl font-bold text-[#E0DCD7] mb-4">Epictetus' Insight</h3>
+                    
+                    <div class="bg-[#C49A6C]/20 p-5 rounded-lg mb-5">
+                        <p class="text-xl text-[#E0DCD7] leading-relaxed font-heading-alt mb-3">"Some things are within our power, while others are not."</p>
+                        <p class="text-base text-[#A8A39D] leading-relaxed">This opening line of the Enchiridion contains the entire Stoic program. Most human suffering comes from confusing these two categories.</p>
+                    </div>
+
+                    <div class="space-y-4 flex-1">
+                        <div class="bg-[#5C6D67]/30 p-4 rounded-lg">
+                            <div class="flex items-center gap-3 mb-3">
+                                <i class="fas fa-circle-check text-2xl text-[#5C6D67]"></i>
+                                <h4 class="font-display text-xl font-bold text-[#E0DCD7]">Within Our Control</h4>
+                            </div>
+                            <ul class="space-y-2">
+                                <li class="flex items-start gap-2">
+                                    <i class="fas fa-check text-[#5C6D67] mt-1"></i>
+                                    <span class="text-base text-[#E0DCD7]"><strong>Our judgments and opinions</strong> — How we interpret events</span>
+                                </li>
+                                <li class="flex items-start gap-2">
+                                    <i class="fas fa-check text-[#5C6D67] mt-1"></i>
+                                    <span class="text-base text-[#E0DCD7]"><strong>Our desires and aversions</strong> — What we pursue and avoid</span>
+                                </li>
+                                <li class="flex items-start gap-2">
+                                    <i class="fas fa-check text-[#5C6D67] mt-1"></i>
+                                    <span class="text-base text-[#E0DCD7]"><strong>Our impulses to act</strong> — How we choose to respond</span>
+                                </li>
+                            </ul>
+                            <p class="text-base text-[#A8A39D] mt-3 italic">"Whatever is of our own doing" — our character and choices</p>
+                        </div>
+
+                        <div class="bg-[#C49A6C]/30 p-4 rounded-lg">
+                            <div class="flex items-center gap-3 mb-3">
+                                <i class="fas fa-circle-xmark text-2xl text-[#C49A6C]"></i>
+                                <h4 class="font-display text-xl font-bold text-[#E0DCD7]">Beyond Our Control</h4>
+                            </div>
+                            <ul class="space-y-2">
+                                <li class="flex items-start gap-2">
+                                    <i class="fas fa-xmark text-[#C49A6C] mt-1"></i>
+                                    <span class="text-base text-[#E0DCD7]"><strong>External events</strong> — Natural disasters, economic conditions</span>
+                                </li>
+                                <li class="flex items-start gap-2">
+                                    <i class="fas fa-xmark text-[#C49A6C] mt-1"></i>
+                                    <span class="text-base text-[#E0DCD7]"><strong>Our body</strong> — Illness, aging, genetic predispositions</span>
+                                </li>
+                                <li class="flex items-start gap-2">
+                                    <i class="fas fa-xmark text-[#C49A6C] mt-1"></i>
+                                    <span class="text-base text-[#E0DCD7]"><strong>Reputation and property</strong> — What others think, what we own</span>
+                                </li>
+                            </ul>
+                            <p class="text-base text-[#A8A39D] mt-3 italic">"Whatever is not of our own doing" — externals</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="w-96 flex flex-col gap-5">
+                    <div class="bg-[#3A3A3A]/40 p-5 rounded-lg">
+                        <h3 class="font-heading-alt text-2xl font-bold text-[#E0DCD7] mb-4">The Practice</h3>
+                        <div class="space-y-3">
+                            <div class="bg-[#2B2B2B]/60 p-3 rounded">
+                                <p class="text-base text-[#C49A6C] font-semibold mb-1">1. Morning Reflection</p>
+                                <p class="text-sm text-[#E0DCD7]">Ask: "What challenges might come today?" Sort them into control categories.</p>
+                            </div>
+                            <div class="bg-[#2B2B2B]/60 p-3 rounded">
+                                <p class="text-base text-[#C49A6C] font-semibold mb-1">2. In the Moment</p>
+                                <p class="text-sm text-[#E0DCD7]">When distressed, pause: "Is this within my control?" If not, let it go.</p>
+                            </div>
+                            <div class="bg-[#2B2B2B]/60 p-3 rounded">
+                                <p class="text-base text-[#C49A6C] font-semibold mb-1">3. Redirect Energy</p>
+                                <p class="text-sm text-[#E0DCD7]">Focus on your response. Ask: "What would virtue look like here?"</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-[#5C6D67]/20 p-5 rounded-lg flex-1">
+                        <h4 class="font-display text-xl font-bold text-[#C49A6C] mb-3">Modern Example</h4>
+                        <p class="text-base text-[#E0DCD7] leading-relaxed mb-3"><strong>Social anxiety before a presentation:</strong></p>
+                        <p class="text-base text-[#A8A39D] leading-relaxed">❌ <em>"Everyone must approve of me"</em> — Uncontrollable</p>
+                        <p class="text-base text-[#E0DCD7] leading-relaxed mt-2">✅ <strong>"I'll focus on being clear, helpful, and well-prepared"</strong> — Controllable</p>
+                    </div>
+
+                    <div class="bg-[#2B2B2B]/60 p-4 rounded-lg">
+                        <p class="text-base text-[#C49A6C] leading-relaxed italic">"The chief task in life is to identify which matters are externals not under our control, and which have to do with the choices we actually control."</p>
+                        <p class="text-sm text-[#A8A39D] mt-2">— Epictetus</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Slide 8: Key Stoic Teachers -->
+    <div class="ppt-slide !bg-[#2B2B2B]" type="content">
+        <div class="h-full flex flex-col">
+            <div class="mb-5">
+                <h2 class="font-display text-5xl font-bold text-[#E0DCD7] mb-3">Key Stoic Teachers</h2>
+                <p class="text-xl text-[#A8A39D]">Three Roman Stoics Who Shaped the Philosophy</p>
+                <div class="h-1 w-24 bg-[#C49A6C] mt-3"></div>
+            </div>
+
+            <div class="flex-1 grid grid-cols-3 gap-5">
+                <div class="bg-[#3A3A3A]/40 p-5 rounded-lg border-t-4 border-[#C49A6C] flex flex-col">
+                    <div class="flex items-center gap-3 mb-3">
+                        <img src="https://kimi-web-img.moonshot.cn/img/cdn.pixabay.com/3f4370f6ab802c37a4ac7e50c8d5de17aa0fdd22.jpg" alt="Seneca" class="w-16 h-16 rounded-full object-cover border-2 border-[#C49A6C]">
+                        <div>
+                            <h3 class="font-heading-alt text-2xl font-bold text-[#E0DCD7]">Seneca</h3>
+                            <p class="text-base text-[#C49A6C]">The Statesman</p>
+                        </div>
+                    </div>
+
+                    <p class="text-base text-[#A8A39D] leading-relaxed mb-3"><strong>Wealthy Roman senator and advisor to Nero.</strong> Lived a life of luxury while advocating simplicity. His writings make Stoicism accessible to everyday life.</p>
+
+                    <div class="flex-1 space-y-3">
+                        <div>
+                            <h4 class="font-display text-base font-bold text-[#C49A6C] mb-2">Key Works</h4>
+                            <p class="text-sm text-[#E0DCD7]"><strong>Letters to Lucilius:</strong> 124 letters offering practical advice on daily challenges</p>
+                            <p class="text-sm text-[#E0DCD7] mt-1"><strong>Essays:</strong> "On the Shortness of Life," "On Anger," "On Tranquility of Mind"</p>
+                        </div>
+
+                        <div>
+                            <h4 class="font-display text-base font-bold text-[#C49A6C] mb-2">Core Teachings</h4>
+                            <ul class="space-y-1">
+                                <li class="text-sm text-[#E0DCD7] flex items-start gap-2">
+                                    <i class="fas fa-circle text-[#C49A6C] text-xs mt-1.5"></i>
+                                    <span>Life is long if you know how to use it</span>
+                                </li>
+                                <li class="text-sm text-[#E0DCD7] flex items-start gap-2">
+                                    <i class="fas fa-circle text-[#C49A6C] text-xs mt-1.5"></i>
+                                    <span>We suffer more in imagination than reality</span>
+                                </li>
+                                <li class="text-sm text-[#E0DCD7] flex items-start gap-2">
+                                    <i class="fas fa-circle text-[#C49A6C] text-xs mt-1.5"></i>
+                                    <span>True wealth is poverty of desires</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="bg-[#C49A6C]/20 p-3 rounded mt-3">
+                        <p class="text-sm text-[#E0DCD7] italic">"Praecogitati mali mollis ictus venit." (If an evil has been pondered beforehand, the blow is gentle when it comes.)</p>
+                    </div>
+                </div>
+
+                <div class="bg-[#3A3A3A]/40 p-5 rounded-lg border-t-4 border-[#5C6D67] flex flex-col">
+                    <div class="flex items-center gap-3 mb-3">
+                        <div class="w-16 h-16 rounded-full bg-[#5C6D67] flex items-center justify-center flex-shrink-0">
+                            <i class="fas fa-user text-2xl text-[#E0DCD7]"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-heading-alt text-2xl font-bold text-[#E0DCD7]">Epictetus</h3>
+                            <p class="text-base text-[#5C6D67]">The Teacher</p>
+                        </div>
+                    </div>
+
+                    <p class="text-base text-[#A8A39D] leading-relaxed mb-3"><strong>Born a slave, became Rome's greatest philosopher.</strong> His teachings focus on freedom through self-mastery and the dichotomy of control.</p>
+
+                    <div class="flex-1 space-y-3">
+                        <div>
+                            <h4 class="font-display text-base font-bold text-[#5C6D67] mb-2">Key Works</h4>
+                            <p class="text-sm text-[#E0DCD7]"><strong>The Enchiridion:</strong> "Handbook" of core Stoic principles</p>
+                            <p class="text-sm text-[#E0DCD7] mt-1"><strong>Discourses:</strong> His teachings as recorded by student Arrian</p>
+                        </div>
+
+                        <div>
+                            <h4 class="font-display text-base font-bold text-[#5C6D67] mb-2">Core Teachings</h4>
+                            <ul class="space-y-1">
+                                <li class="text-sm text-[#E0DCD7] flex items-start gap-2">
+                                    <i class="fas fa-circle text-[#5C6D67] text-xs mt-1.5"></i>
+                                    <span>Focus on what you control</span>
+                                </li>
+                                <li class="text-sm text-[#E0DCD7] flex items-start gap-2">
+                                    <i class="fas fa-circle text-[#5C6D67] text-xs mt-1.5"></i>
+                                    <span>True freedom is within</span>
+                                </li>
+                                <li class="text-sm text-[#E0DCD7] flex items-start gap-2">
+                                    <i class="fas fa-circle text-[#5C6D67] text-xs mt-1.5"></i>
+                                    <span>Don't explain your philosophy, embody it</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="bg-[#5C6D67]/20 p-3 rounded mt-3">
+                        <p class="text-sm text-[#E0DCD7] italic">"Men are disturbed not by things, but by the views which they take of them."</p>
+                    </div>
+                </div>
+
+                <div class="bg-[#3A3A3A]/40 p-5 rounded-lg border-t-4 border-[#C49A6C] flex flex-col">
+                    <div class="flex items-center gap-3 mb-3">
+                        <div class="w-16 h-16 rounded-full bg-[#C49A6C] flex items-center justify-center flex-shrink-0">
+                            <i class="fas fa-crown text-2xl text-[#2B2B2B]"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-heading-alt text-2xl font-bold text-[#E0DCD7]">Marcus Aurelius</h3>
+                            <p class="text-base text-[#C49A6C]">The Emperor</p>
+                        </div>
+                    </div>
+
+                    <p class="text-base text-[#A8A39D] leading-relaxed mb-3"><strong>The most powerful man in the world, practicing humility.</strong> His private journal reveals a man struggling to maintain virtue under immense pressure.</p>
+
+                    <div class="flex-1 space-y-3">
+                        <div>
+                            <h4 class="font-display text-base font-bold text-[#C49A6C] mb-2">Key Work</h4>
+                            <p class="text-sm text-[#E0DCD7]"><strong>Meditations:</strong> Personal reflections on duty, acceptance, and maintaining virtue while ruling an empire</p>
+                        </div>
+
+                        <div>
+                            <h4 class="font-display text-base font-bold text-[#C49A6C] mb-2">Core Themes</h4>
+                            <ul class="space-y-1">
+                                <li class="text-sm text-[#E0DCD7] flex items-start gap-2">
+                                    <i class="fas fa-circle text-[#C49A6C] text-xs mt-1.5"></i>
+                                    <span>The obstacle is the way</span>
+                                </li>
+                                <li class="text-sm text-[#E0DCD7] flex items-start gap-2">
+                                    <i class="fas fa-circle text-[#C49A6C] text-xs mt-1.5"></i>
+                                    <span>Accept the things fate binds you to</span>
+                                </li>
+                                <li class="text-sm text-[#E0DCD7] flex items-start gap-2">
+                                    <i class="fas fa-circle text-[#C49A6C] text-xs mt-1.5"></i>
+                                    <span>Be content with what you are</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="bg-[#C49A6C]/20 p-3 rounded mt-3">
+                        <p class="text-sm text-[#E0DCD7] italic">"The happiness of your life depends upon the quality of your thoughts."</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Slide 9: Chapter 2 -->
+    <div class="ppt-slide !bg-[#2B2B2B]" type="chapter">
+        <img src="chapter2_practice.png" alt="Chapter 2" class="absolute inset-0 w-full h-full object-cover opacity-50">
+        <div class="absolute inset-0 bg-gradient-to-r from-[#2B2B2B] via-[#2B2B2B]/85 to-transparent"></div>
+        <div class="relative h-full flex items-center z-10">
+            <div class="max-w-2xl">
+                <div class="mb-6">
+                    <span class="font-display text-9xl font-bold text-[#5C6D67]">02</span>
+                </div>
+                <h2 class="font-heading-alt text-7xl font-bold text-[#E0DCD7] mb-6">The Practice</h2>
+                <div class="h-1 w-48 bg-[#5C6D67] mb-8"></div>
+                <p class="text-3xl text-[#A8A39D] leading-relaxed">Daily Exercises for Stoic Living</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Slide 10: Premeditatio Malorum -->
+    <div class="ppt-slide !bg-[#2B2B2B]" type="content">
+        <div class="h-full flex flex-col">
+            <div class="mb-5">
+                <h2 class="font-display text-5xl font-bold text-[#E0DCD7] mb-3">Premeditatio Malorum</h2>
+                <p class="text-xl text-[#A8A39D]">Preparing for Adversity Through Negative Visualization</p>
+                <div class="h-1 w-24 bg-[#C49A6C] mt-3"></div>
+            </div>
+
+            <div class="flex-1 flex gap-6">
+                <div class="flex-1 space-y-4">
+                    <div class="bg-[#3A3A3A]/40 p-5 rounded-lg border-l-4 border-[#C49A6C]">
+                        <h3 class="font-heading-alt text-3xl font-bold text-[#E0DCD7] mb-3">What It Is</h3>
+                        <p class="text-xl text-[#E0DCD7] leading-relaxed font-semibold mb-3">The Stoic practice of rehearsing adversity in advance.</p>
+                        <p class="text-base text-[#A8A39D] leading-relaxed">Literally "the premeditation of evils," this involves anticipating difficulties before they happen—not to dwell in fear, but to prepare the mind. By imagining hardships, we lessen their sting, strengthen our equanimity, and learn to value what we have.</p>
+                    </div>
+
+                    <div class="bg-[#5C6D67]/30 p-5 rounded-lg">
+                        <h3 class="font-heading-alt text-2xl font-bold text-[#E0DCD7] mb-3">Ancient Roots</h3>
+                        <div class="space-y-3">
+                            <div class="bg-[#2B2B2B]/60 p-3 rounded">
+                                <p class="text-base text-[#C49A6C] font-semibold mb-1">Seneca</p>
+                                <p class="text-base text-[#E0DCD7] italic">"Praecogitati mali mollis ictus venit"</p>
+                                <p class="text-sm text-[#A8A39D] mt-1">"If an evil has been pondered beforehand, the blow is gentle when it comes."</p>
+                            </div>
+                            <div class="bg-[#2B2B2B]/60 p-3 rounded">
+                                <p class="text-base text-[#C49A6C] font-semibold mb-1">Marcus Aurelius</p>
+                                <p class="text-sm text-[#E0DCD7] leading-relaxed">Each morning, he reminded himself: "The people I deal with today will be meddling, ungrateful, arrogant, dishonest, jealous, and surly." This preparation helped him respond with virtue.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-[#C49A6C]/20 p-4 rounded-lg">
+                        <p class="text-base text-[#E0DCD7] leading-relaxed"><strong>Not Catastrophizing:</strong> This isn't worst-case spiraling. Premeditatio is brief, structured, and ends in action. It makes you calmer, not gloomier.</p>
+                    </div>
+                </div>
+
+                <div class="w-96 flex flex-col gap-4">
+                    <div class="bg-[#3A3A3A]/40 p-5 rounded-lg flex-1">
+                        <h3 class="font-heading-alt text-2xl font-bold text-[#E0DCD7] mb-4">Three Exercises</h3>
+                        
+                        <div class="space-y-3">
+                            <div class="bg-[#5C6D67]/30 p-4 rounded-lg">
+                                <div class="flex items-center gap-2 mb-2">
+                                    <div class="w-8 h-8 rounded-full bg-[#5C6D67] flex items-center justify-center flex-shrink-0">
+                                        <span class="font-bold text-[#E0DCD7]">1</span>
+                                    </div>
+                                    <h4 class="font-display text-lg font-bold text-[#E0DCD7]">Morning Visualization</h4>
+                                </div>
+                                <p class="text-sm text-[#E0DCD7] leading-relaxed">Before starting your day, imagine small frustrations you might face—delays, criticism, fatigue. Prepare to meet them with patience.</p>
+                            </div>
+
+                            <div class="bg-[#5C6D67]/30 p-4 rounded-lg">
+                                <div class="flex items-center gap-2 mb-2">
+                                    <div class="w-8 h-8 rounded-full bg-[#5C6D67] flex items-center justify-center flex-shrink-0">
+                                        <span class="font-bold text-[#E0DCD7]">2</span>
+                                    </div>
+                                    <h4 class="font-display text-lg font-bold text-[#E0DCD7]">Contemplate Loss</h4>
+                                </div>
+                                <p class="text-sm text-[#E0DCD7] leading-relaxed">Choose something you value—health, a friendship, a possession. Imagine losing it. Sit with the discomfort, then feel gratitude that you still have it now.</p>
+                            </div>
+
+                            <div class="bg-[#5C6D67]/30 p-4 rounded-lg">
+                                <div class="flex items-center gap-2 mb-2">
+                                    <div class="w-8 h-8 rounded-full bg-[#5C6D67] flex items-center justify-center flex-shrink-0">
+                                        <span class="font-bold text-[#E0DCD7]">3</span>
+                                    </div>
+                                    <h4 class="font-display text-lg font-bold text-[#E0DCD7]">Rehearse Greater Trials</h4>
+                                </div>
+                                <p class="text-sm text-[#E0DCD7] leading-relaxed">Take a larger fear—financial loss, illness, death. Ask: "If this came, what would remain within my control?" Picture responding with courage.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-[#C49A6C]/20 p-4 rounded-lg">
+                        <h4 class="font-display text-lg font-bold text-[#C49A6C] mb-2">The Paradox</h4>
+                        <p class="text-base text-[#E0DCD7] leading-relaxed">By imagining loss, we don't become gloomy—we become grateful. We realize that these outcomes, though harsh, cannot rob us of our ability to act with virtue.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Slide 11: Stoic Morning and Evening Routine -->
+    <div class="ppt-slide !bg-[#2B2B2B]" type="content">
+        <div class="h-full flex flex-col">
+            <div class="mb-4">
+                <h2 class="font-display text-5xl font-bold text-[#E0DCD7] mb-3">The Stoic Morning & Evening Routine</h2>
+                <p class="text-xl text-[#A8A39D]">Daily Practices That Structure Stoic Living</p>
+                <div class="h-1 w-24 bg-[#C49A6C] mt-3"></div>
+            </div>
+
+            <div class="flex-1 flex gap-5">
+                <div class="flex-1 bg-[#3A3A3A]/40 p-5 rounded-lg border-l-4 border-[#C49A6C] flex flex-col">
+                    <div class="flex items-center gap-3 mb-4">
+                        <i class="fas fa-sun text-3xl text-[#C49A6C]"></i>
+                        <h3 class="font-heading-alt text-3xl font-bold text-[#E0DCD7]">Morning Routine</h3>
+                    </div>
+
+                    <p class="text-base text-[#A8A39D] leading-relaxed mb-4">Marcus Aurelius began each morning by reminding himself of the challenges ahead and preparing to meet them with virtue. This practice takes 10-20 minutes and sets the tone for the entire day.</p>
+
+                    <div class="flex-1 space-y-3">
+                        <div class="bg-[#5C6D67]/30 p-4 rounded-lg">
+                            <h4 class="font-display text-lg font-bold text-[#E0DCD7] mb-2">1. Perspective Taking (5 minutes)</h4>
+                            <p class="text-base text-[#E0DCD7] mb-2">Ask yourself:</p>
+                            <ul class="space-y-1">
+                                <li class="text-sm text-[#E0DCD7] flex items-start gap-2">
+                                    <i class="fas fa-circle text-[#C49A6C] text-xs mt-1.5"></i>
+                                    <span>What challenges might come today?</span>
+                                </li>
+                                <li class="text-sm text-[#E0DCD7] flex items-start gap-2">
+                                    <i class="fas fa-circle text-[#C49A6C] text-xs mt-1.5"></i>
+                                    <span>How will I handle them virtuously?</span>
+                                </li>
+                                <li class="text-sm text-[#E0DCD7] flex items-start gap-2">
+                                    <i class="fas fa-circle text-[#C49A6C] text-xs mt-1.5"></i>
+                                    <span>What good things might I take for granted?</span>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="bg-[#5C6D67]/30 p-4 rounded-lg">
+                            <h4 class="font-display text-lg font-bold text-[#E0DCD7] mb-2">2. Stoic Meditation (5-10 minutes)</h4>
+                            <p class="text-sm text-[#E0DCD7] leading-relaxed">Sit quietly and imagine how you'll respond to setbacks. Visualize difficult people and situations. Prepare yourself so nothing catches you off-guard. End with gratitude for the opportunity to practice virtue.</p>
+                        </div>
+
+                        <div class="bg-[#5C6D67]/30 p-4 rounded-lg">
+                            <h4 class="font-display text-lg font-bold text-[#E0DCD7] mb-2">3. Set Daily Intention</h4>
+                            <p class="text-sm text-[#E0DCD7]">Choose one virtue to focus on today. Say: "Today I will practice [wisdom/courage/justice/temperance] in all my actions."</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flex-1 bg-[#3A3A3A]/40 p-5 rounded-lg border-l-4 border-[#5C6D67] flex flex-col">
+                    <div class="flex items-center gap-3 mb-4">
+                        <i class="fas fa-moon text-3xl text-[#5C6D67]"></i>
+                        <h3 class="font-heading-alt text-3xl font-bold text-[#E0DCD7]">Evening Routine</h3>
+                    </div>
+
+                    <p class="text-base text-[#A8A39D] leading-relaxed mb-4">Seneca wrote: "The mind should be summoned to review its day." This practice creates accountability and ensures continuous learning and improvement.</p>
+
+                    <div class="flex-1 space-y-3">
+                        <div class="bg-[#C49A6C]/30 p-4 rounded-lg">
+                            <h4 class="font-display text-lg font-bold text-[#E0DCD7] mb-2">1. The Three Questions</h4>
+                            <div class="space-y-1">
+                                <p class="text-sm text-[#E0DCD7]"><strong>What did I do well today?</strong> — Recognize virtuous actions</p>
+                                <p class="text-sm text-[#E0DCD7]"><strong>Where did I fall short?</strong> — Acknowledge mistakes without self-judgment</p>
+                                <p class="text-sm text-[#E0DCD7]"><strong>What did I learn?</strong> — Extract lessons for tomorrow</p>
+                            </div>
+                        </div>
+
+                        <div class="bg-[#C49A6C]/30 p-4 rounded-lg">
+                            <h4 class="font-display text-lg font-bold text-[#E0DCD7] mb-2">2. Review the Day's Events</h4>
+                            <p class="text-sm text-[#E0DCD7] leading-relaxed">Go through your day chronologically. Examine your responses to challenges. Where did you react emotionally? Where did you act with virtue? Note patterns and areas for growth.</p>
+                        </div>
+
+                        <div class="bg-[#C49A6C]/30 p-4 rounded-lg">
+                            <h4 class="font-display text-lg font-bold text-[#E0DCD7] mb-2">3. Forgive and Plan</h4>
+                            <p class="text-sm text-[#E0DCD7] mb-2">Forgive yourself for mistakes. Plan how to do better tomorrow. Set one specific intention for improvement.</p>
+                            <div class="bg-[#2B2B2B]/60 p-2 rounded">
+                                <p class="text-sm text-[#C49A6C] italic">"Don't be discouraged. The mark of progress is not never falling, but rising again more quickly."</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-3 bg-[#C49A6C]/20 p-3 rounded-lg">
+                <p class="text-base text-[#E0DCD7] text-center"><strong>The Power of Habit:</strong> "A gem cannot be polished without friction, nor a man perfected without trials." — These daily practices create the structure for lifelong growth in virtue.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Slide 12: Stoic Mindfulness -->
+    <div class="ppt-slide !bg-[#2B2B2B]" type="content">
+        <div class="h-full flex flex-col">
+            <div class="mb-5">
+                <h2 class="font-display text-5xl font-bold text-[#E0DCD7] mb-3">Stoic Mindfulness</h2>
+                <p class="text-xl text-[#A8A39D]">Prosoche: Attention to Our Ruling Faculty</p>
+                <div class="h-1 w-24 bg-[#C49A6C] mt-3"></div>
+            </div>
+
+            <div class="flex-1 flex gap-6">
+                <div class="flex-1 space-y-4">
+                    <div class="bg-[#3A3A3A]/40 p-5 rounded-lg border-l-4 border-[#C49A6C]">
+                        <h3 class="font-heading-alt text-3xl font-bold text-[#E0DCD7] mb-3">What is Prosoche?</h3>
+                        <p class="text-xl text-[#E0DCD7] leading-relaxed font-semibold mb-3">Constant attention to one's ruling faculty and judgments.</p>
+                        <p class="text-base text-[#A8A39D] leading-relaxed">Prosoche (προσοχή) is the Stoic practice of mindfulness—continuously monitoring our thoughts, judgments, and reactions throughout the day. Unlike Buddhist mindfulness which often focuses on bodily sensations, Stoic mindfulness centers on our rational faculty: the seat of judgment and choice.</p>
+                    </div>
+
+                    <div class="bg-[#5C6D67]/30 p-5 rounded-lg">
+                        <h3 class="font-heading-alt text-2xl font-bold text-[#E0DCD7] mb-3">The Goal</h3>
+                        <p class="text-base text-[#E0DCD7] leading-relaxed mb-3">To catch automatic impressions (phantasiai) before they become destructive emotions or actions. To distinguish between:</p>
+                        <div class="grid grid-cols-2 gap-3">
+                            <div class="bg-[#2B2B2B]/60 p-3 rounded">
+                                <p class="text-base text-[#5C6D67] font-semibold mb-1">Impressions</p>
+                                <p class="text-sm text-[#E0DCD7]">Automatic thoughts that arise</p>
+                            </div>
+                            <div class="bg-[#2B2B2B]/60 p-3 rounded">
+                                <p class="text-base text-[#C49A6C] font-semibold mb-1">Judgments</p>
+                                <p class="text-sm text-[#E0DCD7]">Our chosen response</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-[#C49A6C]/20 p-4 rounded-lg">
+                        <p class="text-base text-[#E0DCD7]"><strong>Key insight:</strong> We can't control what impressions arise, but we can control whether we assent to them. This is where freedom lies.</p>
+                    </div>
+                </div>
+
+                <div class="w-96 flex flex-col gap-4">
+                    <div class="bg-[#3A3A3A]/40 p-5 rounded-lg">
+                        <h3 class="font-heading-alt text-2xl font-bold text-[#E0DCD7] mb-4">The Practice</h3>
+                        
+                        <div class="space-y-3">
+                            <div class="bg-[#5C6D67]/30 p-4 rounded-lg">
+                                <h4 class="font-display text-lg font-bold text-[#E0DCD7] mb-2">1. Catch the Impression</h4>
+                                <p class="text-sm text-[#E0DCD7] leading-relaxed">Notice when a strong emotion arises. Pause and identify the thought that triggered it. Say: "You are just an impression, not the thing itself."</p>
+                            </div>
+
+                            <div class="bg-[#5C6D67]/30 p-4 rounded-lg">
+                                <h4 class="font-display text-lg font-bold text-[#E0DCD7] mb-2">2. Examine the Judgment</h4>
+                                <p class="text-sm text-[#E0DCD7] leading-relaxed">Ask: "Is this judgment accurate? Is it about something I control? Does it align with virtue?"</p>
+                            </div>
+
+                            <div class="bg-[#5C6D67]/30 p-4 rounded-lg">
+                                <h4 class="font-display text-lg font-bold text-[#E0DCD7] mb-2">3. Choose Your Response</h4>
+                                <p class="text-sm text-[#E0DCD7] leading-relaxed">Withhold assent if the judgment is false. Redirect your energy toward virtuous action. Focus on what you control.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-[#3A3A3A]/40 p-5 rounded-lg">
+                        <h4 class="font-display text-xl font-bold text-[#C49A6C] mb-3">Modern Parallel</h4>
+                        <p class="text-base text-[#E0DCD7] leading-relaxed mb-3"><strong>Cognitive Behavioral Therapy</strong> uses the same principle:</p>
+                        <div class="bg-[#2B2B2B]/60 p-3 rounded space-y-2">
+                            <p class="text-sm text-[#E0DCD7]"><strong>CBT:</strong> "Thoughts cause feelings"</p>
+                            <p class="text-sm text-[#E0DCD7]"><strong>Stoicism:</strong> "Judgments cause disturbances"</p>
+                            <p class="text-sm text-[#C49A6C] mt-2">Both teach us to examine and challenge our thoughts rather than being controlled by them.</p>
+                        </div>
+                    </div>
+
+                    <div class="bg-[#2B2B2B]/60 p-4 rounded-lg">
+                        <p class="text-base text-[#C49A6C] leading-relaxed italic">"The chief concern of a wise and good man is his own reason."</p>
+                        <p class="text-sm text-[#A8A39D] mt-2">— Epictetus</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Slide 13: Journaling and Self-Reflection -->
+    <div class="ppt-slide !bg-[#2B2B2B]" type="content">
+        <div class="h-full flex flex-col">
+            <div class="mb-5">
+                <h2 class="font-display text-5xl font-bold text-[#E0DCD7] mb-3">Journaling and Self-Reflection</h2>
+                <p class="text-xl text-[#A8A39D]">The Stoic Practice of Philosophical Writing</p>
+                <div class="h-1 w-24 bg-[#C49A6C] mt-3"></div>
+            </div>
+
+            <div class="flex-1 flex gap-6">
+                <div class="flex-1 space-y-4">
+                    <div class="bg-[#3A3A3A]/40 p-5 rounded-lg border-l-4 border-[#C49A6C]">
+                        <h3 class="font-heading-alt text-3xl font-bold text-[#E0DCD7] mb-3">The Stoic Tradition of Journaling</h3>
+                        <p class="text-xl text-[#E0DCD7] leading-relaxed font-semibold mb-3">Marcus Aurelius' Meditations was a private journal.</p>
+                        <p class="text-base text-[#A8A39D] leading-relaxed">Never intended for publication, it reveals a man struggling with the same challenges we face today: distraction, anger, discouragement, and the difficulty of maintaining virtue under pressure. His journal was his tool for self-examination and philosophical practice.</p>
+                    </div>
+
+                    <div class="bg-[#5C6D67]/30 p-5 rounded-lg">
+                        <h3 class="font-heading-alt text-2xl font-bold text-[#E0DCD7] mb-3">Why Journal?</h3>
+                        <div class="grid grid-cols-2 gap-3">
+                            <div class="bg-[#2B2B2B]/60 p-4 rounded">
+                                <p class="text-base text-[#C49A6C] font-semibold mb-2">Track Progress</p>
+                                <p class="text-sm text-[#E0DCD7]">Monitor your growth in virtue over time</p>
+                            </div>
+                            <div class="bg-[#2B2B2B]/60 p-4 rounded">
+                                <p class="text-base text-[#C49A6C] font-semibold mb-2">Examine Judgments</p>
+                                <p class="text-sm text-[#E0DCD7]">Identify faulty thinking patterns</p>
+                            </div>
+                            <div class="bg-[#2B2B2B]/60 p-4 rounded">
+                                <p class="text-base text-[#C49A6C] font-semibold mb-2">Maintain Accountability</p>
+                                <p class="text-sm text-[#E0DCD7]">Stay committed to philosophical principles</p>
+                            </div>
+                            <div class="bg-[#2B2B2B]/60 p-4 rounded">
+                                <p class="text-base text-[#C49A6C] font-semibold mb-2">Process Emotions</p>
+                                <p class="text-sm text-[#E0DCD7]">Transform reactive feelings into reasoned responses</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-[#C49A6C]/20 p-4 rounded-lg">
+                        <p class="text-base text-[#E0DCD7]"><strong>Seneca's Practice:</strong> "What really ruins our character is the fact that none of us looks back over his life." He wrote regular letters as a form of self-reflection.</p>
+                    </div>
+                </div>
+
+                <div class="w-96 flex flex-col gap-4">
+                    <div class="bg-[#3A3A3A]/40 p-5 rounded-lg flex-1">
+                        <h3 class="font-heading-alt text-2xl font-bold text-[#E0DCD7] mb-4">Practical Prompts</h3>
+                        
+                        <div class="space-y-3">
+                            <div class="bg-[#5C6D67]/30 p-3 rounded">
+                                <h4 class="font-display text-base font-bold text-[#E0DCD7] mb-2">Daily Review</h4>
+                                <ul class="space-y-1 text-sm text-[#E0DCD7]">
+                                    <li>• Where did I act with virtue today?</li>
+                                    <li>• Where did I fall to passion or fear?</li>
+                                    <li>• What would I do differently?</li>
+                                </ul>
+                            </div>
+
+                            <div class="bg-[#5C6D67]/30 p-3 rounded">
+                                <h4 class="font-display text-base font-bold text-[#E0DCD7] mb-2">Judgment Examination</h4>
+                                <ul class="space-y-1 text-sm text-[#E0DCD7]">
+                                    <li>• What automatic thoughts arose?</li>
+                                    <li>• Were they accurate? In my control?</li>
+                                    <li>• How did my judgments affect my emotions?</li>
+                                </ul>
+                            </div>
+
+                            <div class="bg-[#5C6D67]/30 p-3 rounded">
+                                <h4 class="font-display text-base font-bold text-[#E0DCD7] mb-2">Gratitude & Perspective</h4>
+                                <ul class="space-y-1 text-sm text-[#E0DCD7]">
+                                    <li>• What am I grateful for today?</li>
+                                    <li>• What hardships did I escape?</li>
+                                    <li>• How can I be better tomorrow?</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-[#3A3A3A]/40 p-4 rounded-lg">
+                        <h4 class="font-display text-xl font-bold text-[#C49A6C] mb-3">Marcus Aurelius' Example</h4>
+                        <div class="bg-[#2B2B2B]/60 p-3 rounded space-y-2">
+                            <p class="text-sm text-[#E0DCD7] italic">"The people I deal with today will be... meddling, ungrateful, arrogant, dishonest, jealous, and surly."</p>
+                            <p class="text-sm text-[#E0DCD7] italic">"But I have seen the beauty of good, and the ugliness of evil, and have recognized that the wrongdoer has a nature related to my own."</p>
+                            <p class="text-xs text-[#C49A6C] mt-2">He uses his journal to remind himself of his principles and prepare for challenges.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Slide 14: Chapter 3 -->
+    <div class="ppt-slide !bg-[#2B2B2B]" type="chapter">
+        <img src="chapter3_science.png" alt="Chapter 3" class="absolute inset-0 w-full h-full object-cover opacity-50">
+        <div class="absolute inset-0 bg-gradient-to-r from-[#2B2B2B] via-[#2B2B2B]/85 to-transparent"></div>
+        <div class="relative h-full flex items-center z-10">
+            <div class="max-w-2xl">
+                <div class="mb-6">
+                    <span class="font-display text-9xl font-bold text-[#C49A6C]">03</span>
+                </div>
+                <h2 class="font-heading-alt text-7xl font-bold text-[#E0DCD7] mb-6">The Science</h2>
+                <div class="h-1 w-48 bg-[#C49A6C] mb-8"></div>
+                <p class="text-3xl text-[#A8A39D] leading-relaxed">Stoicism's Influence on Modern Psychology</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Slide 15: Philosophical Roots of CBT -->
+    <div class="ppt-slide !bg-[#2B2B2B]" type="content">
+        <div class="h-full flex flex-col">
+            <div class="mb-5">
+                <h2 class="font-display text-5xl font-bold text-[#E0DCD7] mb-3">The Philosophical Roots of CBT</h2>
+                <p class="text-xl text-[#A8A39D]">How Stoicism Became the Foundation of Modern Psychotherapy</p>
+                <div class="h-1 w-24 bg-[#C49A6C] mt-3"></div>
+            </div>
+
+            <div class="flex-1 flex gap-6">
+                <div class="flex-1 space-y-4">
+                    <div class="bg-[#3A3A3A]/40 p-5 rounded-lg border-l-4 border-[#C49A6C]">
+                        <h3 class="font-heading-alt text-3xl font-bold text-[#E0DCD7] mb-3">The Direct Lineage</h3>
+                        <p class="text-xl text-[#E0DCD7] leading-relaxed font-semibold mb-3">CBT founders explicitly credited Epictetus as their philosophical precursor.</p>
+                        <p class="text-base text-[#A8A39D] leading-relaxed">Cognitive Behavioral Therapy didn't emerge from thin air—it was built on Stoic insights. Aaron Beck and Albert Ellis, the pioneers of CBT, openly acknowledged that the core principle of their therapeutic approach came directly from ancient Stoic philosophy.</p>
+                    </div>
+
+                    <div class="bg-[#5C6D67]/30 p-5 rounded-lg">
+                        <h3 class="font-heading-alt text-2xl font-bold text-[#E0DCD7] mb-3">The Shared Insight</h3>
+                        <div class="bg-[#2B2B2B]/60 p-4 rounded-lg mb-3">
+                            <p class="text-lg text-[#C49A6C] font-semibold mb-2">Epictetus (1st Century CE)</p>
+                            <p class="text-xl text-[#E0DCD7] italic leading-relaxed">"Men are disturbed not by things, but by the views which they take of them."</p>
+                        </div>
+                        <div class="bg-[#2B2B2B]/60 p-4 rounded-lg">
+                            <p class="text-lg text-[#5C6D67] font-semibold mb-2">CBT (20th Century)</p>
+                            <p class="text-base text-[#E0DCD7] leading-relaxed"><strong>Core Principle:</strong> Events don't cause emotional disturbances—our thoughts and beliefs about events do. Change your thinking, change your emotional response.</p>
+                        </div>
+                    </div>
+
+                    <div class="bg-[#C49A6C]/20 p-4 rounded-lg">
+                        <p class="text-base text-[#E0DCD7]"><strong>Aaron Beck wrote:</strong> "The philosophical origins of cognitive therapy can be traced back to the Stoic philosophers... Epictetus wrote in The Enchiridion: 'Men are disturbed not by things but by the views which they take of them.'"</p>
+                    </div>
+                </div>
+
+                <div class="w-96 flex flex-col gap-4">
+                    <div class="bg-[#3A3A3A]/40 p-5 rounded-lg">
+                        <h3 class="font-heading-alt text-2xl font-bold text-[#E0DCD7] mb-4">The Pioneers</h3>
+                        
+                        <div class="space-y-3">
+                            <div class="bg-[#5C6D67]/30 p-4 rounded-lg">
+                                <h4 class="font-display text-xl font-bold text-[#E0DCD7] mb-2">Albert Ellis</h4>
+                                <p class="text-sm text-[#C49A6C] mb-2">Founder of Rational Emotive Behavior Therapy (REBT)</p>
+                                <p class="text-sm text-[#E0DCD7] leading-relaxed mb-2">"Much of the theory of REBT was derived from philosophy rather than psychology."</p>
+                                <p class="text-sm text-[#A8A39D] leading-relaxed">Ellis said he "rescued Epictetus from near-obscurity and made him famous all over again."</p>
+                            </div>
+
+                            <div class="bg-[#5C6D67]/30 p-4 rounded-lg">
+                                <h4 class="font-display text-xl font-bold text-[#E0DCD7] mb-2">Aaron Beck</h4>
+                                <p class="text-sm text-[#C49A6C] mb-2">Father of Cognitive Therapy</p>
+                                <p class="text-sm text-[#E0DCD7] leading-relaxed mb-2">"The philosophical underpinnings go back thousands of years, certainly to the time of the Stoics, who considered man's conceptions (or misconceptions) of events rather than the events themselves as the key to his emotional upsets."</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-[#3A3A3A]/40 p-5 rounded-lg">
+                        <h4 class="font-display text-xl font-bold text-[#C49A6C] mb-3">Parallels</h4>
+                        <div class="space-y-2">
+                            <div class="flex items-start gap-2">
+                                <i class="fas fa-arrow-right text-[#C49A6C] mt-1"></i>
+                                <p class="text-sm text-[#E0DCD7]"><strong>Stoic mindfulness</strong> = CBT's cognitive monitoring</p>
+                            </div>
+                            <div class="flex items-start gap-2">
+                                <i class="fas fa-arrow-right text-[#C49A6C] mt-1"></i>
+                                <p class="text-sm text-[#E0DCD7]"><strong>Examining judgments</strong> = Cognitive restructuring</p>
+                            </div>
+                            <div class="flex items-start gap-2">
+                                <i class="fas fa-arrow-right text-[#C49A6C] mt-1"></i>
+                                <p class="text-sm text-[#E0DCD7]"><strong>Dichotomy of control</strong> = Focusing on controllables</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-[#2B2B2B]/60 p-4 rounded-lg">
+                        <p class="text-base text-[#C49A6C] leading-relaxed italic">"The cognitive revolution might have taken place two thousand years before what is commonly held."</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Slide 16: Research Evidence -->
+    <div class="ppt-slide !bg-[#2B2B2B]" type="content">
+        <div class="h-full flex flex-col">
+            <div class="mb-5">
+                <h2 class="font-display text-5xl font-bold text-[#E0DCD7] mb-3">Research Evidence</h2>
+                <p class="text-xl text-[#A8A39D]">Scientific Studies on Stoicism and Mental Health</p>
+                <div class="h-1 w-24 bg-[#C49A6C] mt-3"></div>
+            </div>
+
+            <div class="flex-1 flex gap-6">
+                <div class="flex-1 space-y-4">
+                    <div class="bg-[#3A3A3A]/40 p-5 rounded-lg border-l-4 border-[#C49A6C]">
+                        <h3 class="font-heading-alt text-3xl font-bold text-[#E0DCD7] mb-3">The Stoic Attitudes and Behaviors Scale (SABS)</h3>
+                        <p class="text-base text-[#A8A39D] leading-relaxed mb-3">Modern researchers have developed validated scales to measure Stoic beliefs and practices. Studies with thousands of participants worldwide show clear patterns: <strong>people who score highly on Stoicism report greater life satisfaction, stronger resilience, and lower levels of anger and anxiety.</strong></p>
+                        <p class="text-base text-[#E0DCD7] leading-relaxed">Conversely, those who practice "stiff-upper-lip stoicism" (emotional suppression) actually do worse—confirming that authentic Stoicism is about wisdom and acceptance, not suppression.</p>
+                    </div>
+
+                    <div class="bg-[#5C6D67]/30 p-5 rounded-lg">
+                        <h3 class="font-heading-alt text-2xl font-bold text-[#E0DCD7] mb-3">Stoic Week: Measurable Benefits in 7 Days</h3>
+                        <p class="text-base text-[#A8A39D] leading-relaxed mb-3">Annual event where participants live like Stoics for one week. Results show:</p>
+                        <div class="grid grid-cols-2 gap-3">
+                            <div class="bg-[#2B2B2B]/60 p-3 rounded text-center">
+                                <p class="text-2xl font-bold text-[#C49A6C] mb-1">10%</p>
+                                <p class="text-sm text-[#E0DCD7]">Increase in life satisfaction</p>
+                            </div>
+                            <div class="bg-[#2B2B2B]/60 p-3 rounded text-center">
+                                <p class="text-2xl font-bold text-[#C49A6C] mb-1">14%</p>
+                                <p class="text-sm text-[#E0DCD7]">Boost in positive emotions</p>
+                            </div>
+                            <div class="bg-[#2B2B2B]/60 p-3 rounded text-center">
+                                <p class="text-2xl font-bold text-[#5C6D67] mb-1">-15%</p>
+                                <p class="text-sm text-[#E0DCD7]">Reduction in negative emotions</p>
+                            </div>
+                            <div class="bg-[#2B2B2B]/60 p-3 rounded text-center">
+                                <p class="text-2xl font-bold text-[#5C6D67] mb-1">-11%</p>
+                                <p class="text-sm text-[#E0DCD7]">Decrease in anxiety</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-[#C49A6C]/20 p-4 rounded-lg">
+                        <p class="text-base text-[#E0DCD7]"><strong>Clinical Practice:</strong> "When people put Stoicism into practice in their lives, their relationships, stress levels and general well-being all tend to improve." — Dr. Donald Robertson, cognitive-behavioral psychotherapist</p>
+                    </div>
+                </div>
+
+                <div class="w-96 flex flex-col gap-4">
+                    <div class="bg-[#3A3A3A]/40 p-5 rounded-lg">
+                        <h3 class="font-heading-alt text-2xl font-bold text-[#E0DCD7] mb-4">Mental Health Benefits</h3>
+                        
+                        <div class="space-y-3">
+                            <div class="bg-[#5C6D67]/30 p-4 rounded-lg">
+                                <h4 class="font-display text-lg font-bold text-[#E0DCD7] mb-2">Reduced Anxiety & Depression</h4>
+                                <p class="text-sm text-[#E0DCD7] leading-relaxed">Research shows adopting Stoic perspectives is associated with notable reduction in anxiety and depression symptoms.</p>
+                            </div>
+
+                            <div class="bg-[#5C6D67]/30 p-4 rounded-lg">
+                                <h4 class="font-display text-lg font-bold text-[#E0DCD7] mb-2">Enhanced Resilience</h4>
+                                <p class="text-sm text-[#E0DCD7] leading-relaxed">Stoic principles significantly enhance emotional resilience and capacity to cope with life's difficulties.</p>
+                            </div>
+
+                            <div class="bg-[#5C6D67]/30 p-4 rounded-lg">
+                                <h4 class="font-display text-lg font-bold text-[#E0DCD7] mb-2">Reduced Social Comparison</h4>
+                                <p class="text-sm text-[#E0DCD7] leading-relaxed">Stoicism provides a buffer against social comparison by emphasizing internal standards over external validation.</p>
+                            </div>
+
+                            <div class="bg-[#5C6D67]/30 p-4 rounded-lg">
+                                <h4 class="font-display text-lg font-bold text-[#E0DCD7] mb-2">Stress Reduction</h4>
+                                <p class="text-sm text-[#E0DCD7] leading-relaxed">Stoic principles significantly reduce perceived stress and promote psychological well-being.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-[#3A3A3A]/40 p-4 rounded-lg">
+                        <h4 class="font-display text-xl font-bold text-[#C49A6C] mb-3">The SABS as Tool</h4>
+                        <p class="text-base text-[#E0DCD7] leading-relaxed">The Stoic Attitudes and Behaviors Scale works like both a mirror and a map—showing where you're strong and where you might want to grow.</p>
+                    </div>
+
+                    <div class="bg-[#2B2B2B]/60 p-4 rounded-lg">
+                        <p class="text-base text-[#C49A6C] leading-relaxed italic">"The mark of progress is not never falling, but rising again more quickly."</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Slide 17: Digital Stoicism -->
+    <div class="ppt-slide !bg-[#2B2B2B]" type="content">
+        <div class="h-full flex flex-col">
+            <div class="mb-5">
+                <h2 class="font-display text-5xl font-bold text-[#E0DCD7] mb-3">Digital Stoicism</h2>
+                <p class="text-xl text-[#A8A39D]">Ancient Wisdom for the Modern World</p>
+                <div class="h-1 w-24 bg-[#C49A6C] mt-3"></div>
+            </div>
+
+            <div class="flex-1 flex gap-6">
+                <div class="flex-1 space-y-4">
+                    <div class="bg-[#3A3A3A]/40 p-5 rounded-lg border-l-4 border-[#C49A6C]">
+                        <h3 class="font-heading-alt text-3xl font-bold text-[#E0DCD7] mb-3">The Modern Challenge</h3>
+                        <p class="text-xl text-[#E0DCD7] leading-relaxed font-semibold mb-3">Stoicism offers tools for digital wellness.</p>
+                        <p class="text-base text-[#A8A39D] leading-relaxed">Social media, smartphones, and information overload create new challenges: constant distraction, comparison culture, and the need for external validation. Stoic principles provide a framework for maintaining autonomy and peace of mind.</p>
+                    </div>
+
+                    <div class="bg-[#5C6D67]/30 p-5 rounded-lg">
+                        <h3 class="font-heading-alt text-2xl font-bold text-[#E0DCD7] mb-3">The Dichotomy of Control Online</h3>
+                        <div class="grid grid-cols-2 gap-3">
+                            <div class="bg-[#C49A6C]/30 p-4 rounded">
+                                <p class="text-base text-[#C49A6C] font-semibold mb-2">❌ Beyond Our Control</p>
+                                <ul class="space-y-1 text-sm text-[#E0DCD7]">
+                                    <li>• Likes, comments, shares</li>
+                                    <li>• Follower counts</li>
+                                    <li>• Others' opinions</li>
+                                    <li>• Algorithmic feeds</li>
+                                    <li>• Going viral</li>
+                                </ul>
+                            </div>
+                            <div class="bg-[#5C6D67]/30 p-4 rounded">
+                                <p class="text-base text-[#5C6D67] font-semibold mb-2">✅ Within Our Control</p>
+                                <ul class="space-y-1 text-sm text-[#E0DCD7]">
+                                    <li>• What we post</li>
+                                    <li>• How we engage</li>
+                                    <li>• Time we spend</li>
+                                    <li>• Our intentions</li>
+                                    <li>• Our response to feedback</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-[#C49A6C]/20 p-4 rounded-lg">
+                        <p class="text-base text-[#E0DCD7]"><strong>Key insight:</strong> Stoicism doesn't reject technology—it guides us to use it virtuously, with clear intentions and boundaries.</p>
+                    </div>
+                </div>
+
+                <div class="w-96 flex flex-col gap-4">
+                    <div class="bg-[#3A3A3A]/40 p-5 rounded-lg">
+                        <h3 class="font-heading-alt text-2xl font-bold text-[#E0DCD7] mb-4">Stoic Strategies</h3>
+                        
+                        <div class="space-y-3">
+                            <div class="bg-[#5C6D67]/30 p-4 rounded-lg">
+                                <h4 class="font-display text-lg font-bold text-[#E0DCD7] mb-2">1. Intentional Posting</h4>
+                                <p class="text-sm text-[#E0DCD7] leading-relaxed">Ask: "Am I adding value or seeking validation?" Post to be helpful, not to feed ego.</p>
+                            </div>
+
+                            <div class="bg-[#5C6D67]/30 p-4 rounded-lg">
+                                <h4 class="font-display text-lg font-bold text-[#E0DCD7] mb-2">2. Digital Temperance</h4>
+                                <p class="text-sm text-[#E0DCD7] leading-relaxed">Set clear boundaries: time limits, no-phone zones. Practice moderation in all digital consumption.</p>
+                            </div>
+
+                            <div class="bg-[#5C6D67]/30 p-4 rounded-lg">
+                                <h4 class="font-display text-lg font-bold text-[#E0DCD7] mb-2">3. Negative Visualization</h4>
+                                <p class="text-sm text-[#E0DCD7] leading-relaxed">Counter the highlight-reel effect by remembering: social media shows curated moments, not full reality.</p>
+                            </div>
+
+                            <div class="bg-[#5C6D67]/30 p-4 rounded-lg">
+                                <h4 class="font-display text-lg font-bold text-[#E0DCD7] mb-2">4. Mindful Consumption</h4>
+                                <p class="text-sm text-[#E0DCD7] leading-relaxed">Curate your feed intentionally. Unfollow accounts that trigger comparison or unhealthy emotions.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-[#3A3A3A]/40 p-4 rounded-lg">
+                        <h4 class="font-display text-xl font-bold text-[#C49A6C] mb-3">The Mindful Scroll</h4>
+                        <p class="text-base text-[#E0DCD7] leading-relaxed mb-2">Before scrolling, ask:</p>
+                        <div class="bg-[#2B2B2B]/60 p-3 rounded space-y-1">
+                            <p class="text-sm text-[#E0DCD7]">• Why am I opening this app?</p>
+                            <p class="text-sm text-[#E0DCD7]">• What would virtue look like here?</p>
+                            <p class="text-sm text-[#E0DCD7]">• Am I in control, or is the algorithm?</p>
+                        </div>
+                    </div>
+
+                    <div class="bg-[#2B2B2B]/60 p-4 rounded-lg">
+                        <p class="text-base text-[#C49A6C] leading-relaxed italic">"You become what you give your attention to."</p>
+                        <p class="text-sm text-[#A8A39D] mt-2">— Epictetus</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Slide 18: Living Stoically -->
+    <div class="ppt-slide !bg-[#2B2B2B]" type="content">
+        <div class="h-full flex flex-col">
+            <div class="mb-5">
+                <h2 class="font-display text-5xl font-bold text-[#E0DCD7] mb-3">Living Stoically</h2>
+                <p class="text-xl text-[#A8A39D]">Practical Applications for Modern Life</p>
+                <div class="h-1 w-24 bg-[#C49A6C] mt-3"></div>
+            </div>
+
+            <div class="flex-1 grid grid-cols-2 gap-5">
+                <div class="bg-[#3A3A3A]/40 p-5 rounded-lg border-t-4 border-[#C49A6C] flex flex-col">
+                    <h3 class="font-heading-alt text-2xl font-bold text-[#E0DCD7] mb-3">Real-World Scenarios</h3>
+                    
+                    <div class="flex-1 space-y-3">
+                        <div class="bg-[#5C6D67]/30 p-4 rounded-lg">
+                            <h4 class="font-display text-lg font-bold text-[#E0DCD7] mb-2">Workplace Stress</h4>
+                            <p class="text-sm text-[#A8A39D] mb-2"><strong>Scenario:</strong> Unfair criticism from your boss</p>
+                            <p class="text-sm text-[#E0DCD7]"><strong>Stoic Response:</strong> "I can't control their opinion. I can control my effort and integrity. Let me focus on doing good work and responding with reason, not defensiveness."</p>
+                        </div>
+
+                        <div class="bg-[#5C6D67]/30 p-4 rounded-lg">
+                            <h4 class="font-display text-lg font-bold text-[#E0DCD7] mb-2">Relationship Conflict</h4>
+                            <p class="text-sm text-[#A8A39D] mb-2"><strong>Scenario:</strong> Argument with a partner</p>
+                            <p class="text-sm text-[#E0DCD7]"><strong>Stoic Response:</strong> "This person is not my enemy but a fellow human being. What would justice look like here? Let me listen to understand, not to win."</p>
+                        </div>
+
+                        <div class="bg-[#5C6D67]/30 p-4 rounded-lg">
+                            <h4 class="font-display text-lg font-bold text-[#E0DCD7] mb-2">Financial Anxiety</h4>
+                            <p class="text-sm text-[#A8A39D] mb-2"><strong>Scenario:</strong> Market downturn affecting investments</p>
+                            <p class="text-sm text-[#E0DCD7]"><strong>Stoic Response:</strong> "Wealth is indifferent. True wealth is virtue and contentment. I will focus on what I control: spending wisely, saving consistently, and not worrying about external events."</p>
+                        </div>
+
+                        <div class="bg-[#5C6D67]/30 p-4 rounded-lg">
+                            <h4 class="font-display text-lg font-bold text-[#E0DCD7] mb-2">Major Setback</h4>
+                            <p class="text-sm text-[#A8A39D] mb-2"><strong>Scenario:</strong> Job loss or business failure</p>
+                            <p class="text-sm text-[#E0DCD7]"><strong>Stoic Response:</strong> "This is not a tragedy but an opportunity to practice virtue. What can I learn? How can I respond with courage and wisdom? The obstacle becomes the way."</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flex flex-col gap-5">
+                    <div class="bg-[#3A3A3A]/40 p-5 rounded-lg border-t-4 border-[#5C6D67] flex flex-col">
+                        <h3 class="font-heading-alt text-2xl font-bold text-[#E0DCD7] mb-3">Core Principles to Remember</h3>
+                        
+                        <div class="flex-1 space-y-3">
+                            <div class="bg-[#C49A6C]/30 p-4 rounded-lg">
+                                <div class="flex items-center gap-2 mb-2">
+                                    <i class="fas fa-brain text-xl text-[#C49A6C]"></i>
+                                    <h4 class="font-display text-lg font-bold text-[#E0DCD7]">Focus on Virtue</h4>
+                                </div>
+                                <p class="text-sm text-[#E0DCD7] leading-relaxed">In every situation, ask: "What would wisdom, courage, justice, or temperance look like here?" Let virtue guide your actions.</p>
+                            </div>
+
+                            <div class="bg-[#C49A6C]/30 p-4 rounded-lg">
+                                <div class="flex items-center gap-2 mb-2">
+                                    <i class="fas fa-anchor text-xl text-[#C49A6C]"></i>
+                                    <h4 class="font-display text-lg font-bold text-[#E0DCD7]">Accept What Is</h4>
+                                </div>
+                                <p class="text-sm text-[#E0DCD7] leading-relaxed">Don't demand that events conform to your wishes. Wish that they happen as they do, and your life will flow well.</p>
+                            </div>
+
+                            <div class="bg-[#C49A6C]/30 p-4 rounded-lg">
+                                <div class="flex items-center gap-2 mb-2">
+                                    <i class="fas fa-dumbbell text-xl text-[#C49A6C]"></i>
+                                    <h4 class="font-display text-lg font-bold text-[#E0DCD7]">Practice Daily</h4>
+                                </div>
+                                <p class="text-sm text-[#E0DCD7] leading-relaxed">Stoicism is a muscle that strengthens with use. Morning reflection, evening review, journaling—these aren't optional extras but essential practice.</p>
+                            </div>
+
+                            <div class="bg-[#C49A6C]/30 p-4 rounded-lg">
+                                <div class="flex items-center gap-2 mb-2">
+                                    <i class="fas fa-users text-xl text-[#C49A6C]"></i>
+                                    <h4 class="font-display text-lg font-bold text-[#E0DCD7]">Serve the Common Good</h4>
+                                </div>
+                                <p class="text-sm text-[#E0DCD7] leading-relaxed">We're all part of the same human community. Act for others' benefit, not just your own. Justice is the source of all virtues.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-[#C49A6C]/20 p-4 rounded-lg">
+                        <p class="text-base text-[#E0DCD7] leading-relaxed"><strong>Remember:</strong> Stoicism isn't about suppression or detachment. It's about transforming your perspective to live with greater wisdom, courage, justice, and temperance—finding strength in virtue rather than externals.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Slide 19: Final -->
+    <div class="ppt-slide !bg-[#2B2B2B]" type="final">
+        <img src="closing_path.png" alt="Closing" class="absolute inset-0 w-full h-full object-cover opacity-50">
+        <div class="absolute inset-0 bg-gradient-to-br from-[#2B2B2B]/95 via-[#2B2B2B]/80 to-transparent"></div>
+        <div class="relative h-full flex flex-col justify-center items-center text-center z-10">
+            <div class="max-w-4xl">
+                <div class="mb-8">
+                    <i class="fas fa-compass text-6xl text-[#C49A6C]"></i>
+                </div>
+                
+                <h2 class="font-heading-alt text-6xl font-bold text-[#E0DCD7] leading-tight mb-6">The Stoic Path Forward</h2>
+                
+                <div class="h-1 w-32 bg-[#C49A6C] mx-auto mb-8"></div>
+                
+                <div class="space-y-6 text-xl text-[#E0DCD7] leading-relaxed mb-10">
+                    <p>You have power over your mind—not outside events. <span class="text-[#C49A6C]">Realize this, and you will find strength.</span></p>
+                    
+                    <p>The path to the good life begins not with changing the world, but with mastering yourself.</p>
+                    
+                    <p class="text-2xl font-heading-alt text-[#C49A6C]">Start today: practice virtue, focus on what you control, and meet adversity with wisdom.</p>
+                </div>
+
+                <div class="bg-[#3A3A3A]/60 p-6 rounded-lg mb-8">
+                    <p class="text-2xl text-[#E0DCD7] italic leading-relaxed mb-3">"The impediment to action advances action. What stands in the way becomes the way."</p>
+                    <p class="text-xl text-[#C49A6C]">— Marcus Aurelius</p>
+                </div>
+
+                <div class="grid grid-cols-4 gap-6">
+                    <div class="bg-[#5C6D67]/30 p-4 rounded-lg">
+                        <i class="fas fa-brain text-3xl text-[#C49A6C] mb-2"></i>
+                        <p class="text-base text-[#E0DCD7] font-semibold">Wisdom</p>
+                    </div>
+                    <div class="bg-[#5C6D67]/30 p-4 rounded-lg">
+                        <i class="fas fa-shield-alt text-3xl text-[#C49A6C] mb-2"></i>
+                        <p class="text-base text-[#E0DCD7] font-semibold">Courage</p>
+                    </div>
+                    <div class="bg-[#5C6D67]/30 p-4 rounded-lg">
+                        <i class="fas fa-balance-scale text-3xl text-[#C49A6C] mb-2"></i>
+                        <p class="text-base text-[#E0DCD7] font-semibold">Justice</p>
+                    </div>
+                    <div class="bg-[#5C6D67]/30 p-4 rounded-lg">
+                        <i class="fas fa-hand-paper text-3xl text-[#C49A6C] mb-2"></i>
+                        <p class="text-base text-[#E0DCD7] font-semibold">Temperance</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

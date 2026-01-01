@@ -1,0 +1,856 @@
+{
+  "metadata": {
+    "title": "Stoicism: Philosophy for Modern Resilience",
+    "subtitle": "Ancient Wisdom for Contemporary Challenges",
+    "theme": {
+      "primaryColor": "#C49A6C",
+      "secondaryColor": "#5C6D67",
+      "backgroundColor": "#2B2B2B",
+      "textColor": "#E0DCD7",
+      "accentColor": "#A8A39D"
+    },
+    "fonts": {
+      "display": "Quattrocento",
+      "heading": "Oranienbaum",
+      "body": "Quattrocento Sans"
+    }
+  },
+  "slides": [
+    {
+      "slideNumber": 1,
+      "type": "cover",
+      "image": "stoicism_cover.png",
+      "title": "Stoicism",
+      "subtitle": "Philosophy for Modern Resilience",
+      "tagline": "Ancient Wisdom for Contemporary Challenges"
+    },
+    {
+      "slideNumber": 2,
+      "type": "table_of_contents",
+      "title": "Contents",
+      "sections": [
+        {
+          "number": "01",
+          "title": "The Foundation",
+          "description": "Understanding Stoicism's origins, key figures, and core principles including the Four Cardinal Virtues and the Dichotomy of Control",
+          "color": "#C49A6C"
+        },
+        {
+          "number": "02",
+          "title": "The Practice",
+          "description": "Daily Stoic exercises including Premeditatio Malorum, journaling, and mindfulness practices for modern resilience",
+          "color": "#5C6D67"
+        },
+        {
+          "number": "03",
+          "title": "The Science",
+          "description": "Stoicism's influence on cognitive behavioral therapy, research evidence, and applications to digital wellness",
+          "color": "#C49A6C"
+        }
+      ]
+    },
+    {
+      "slideNumber": 3,
+      "type": "chapter",
+      "chapterNumber": "01",
+      "image": "chapter1_foundation.png",
+      "title": "The Foundation",
+      "subtitle": "Understanding Stoicism's Origins and Core Principles",
+      "color": "#C49A6C"
+    },
+    {
+      "slideNumber": 4,
+      "type": "content",
+      "title": "What is Stoicism?",
+      "content": {
+        "mainSections": [
+          {
+            "icon": "fa-compass",
+            "heading": "A Practical Philosophy",
+            "text": [
+              "Stoicism is not abstract theory—it's a living practice. Founded by Zeno of Citium in 301 BCE, it teaches that the path to happiness (eudaimonia) lies in virtue, self-control, and living in harmony with nature and reason.",
+              "Unlike philosophies that focus on complex metaphysics, Stoicism offers concrete tools for daily resilience, emotional regulation, and ethical living."
+            ],
+            "color": "#C49A6C"
+          },
+          {
+            "icon": "fa-anchor",
+            "heading": "The Core Insight",
+            "text": [
+              "Stoicism distinguishes between what we control and what we don't. Our thoughts, judgments, and actions are ours to direct. External events—other people's opinions, the weather, outcomes—are not.",
+              "This simple but profound distinction liberates us from anxiety about the uncontrollable and focuses our energy where it matters most: on our own virtue and choices."
+            ],
+            "color": "#5C6D67"
+          }
+        ],
+        "quote": {
+          "text": "You have power over your mind—not outside events. Realize this, and you will find strength.",
+          "author": "Marcus Aurelius"
+        },
+        "keyPrinciples": [
+          {
+            "title": "Virtue is the highest good",
+            "description": "Wisdom, courage, justice, temperance"
+          },
+          {
+            "title": "Focus on what you control",
+            "description": "Judgments, desires, actions"
+          },
+          {
+            "title": "Accept what happens",
+            "description": "Amor fati—love what is"
+          },
+          {
+            "title": "Practice daily",
+            "description": "Journaling, reflection, mindfulness"
+          }
+        ]
+      }
+    },
+    {
+      "slideNumber": 5,
+      "type": "content",
+      "title": "The Stoic Timeline",
+      "subtitle": "From Zeno to Marcus Aurelius: Six Centuries of Philosophical Evolution",
+      "content": {
+        "timeline": [
+          {
+            "period": "334-262 BCE",
+            "name": "Zeno of Citium",
+            "role": "Founder of Stoicism",
+            "description": "Taught in the Stoa Poikile (painted porch) in Athens. Established the core doctrine that virtue is the only true good and that we should live in harmony with nature.",
+            "keyInsight": "Happiness comes from virtue, not external goods like wealth or reputation.",
+            "color": "#C49A6C"
+          },
+          {
+            "period": "330-230 BCE",
+            "name": "Cleanthes & Chrysippus",
+            "role": "System builders",
+            "description": "The second and third heads of the Stoic school. Cleanthes emphasized assenting to reason. Chrysippus developed Stoic logic, ethics, and physics, expanding the doctrine into a comprehensive system.",
+            "keyInsight": "If Chrysippus had not existed, neither would the Stoa.",
+            "color": "#5C6D67"
+          },
+          {
+            "period": "4 BCE-65 CE",
+            "name": "Seneca the Younger",
+            "role": "The practical philosopher",
+            "description": "Roman statesman and dramatist who wrote accessible essays and letters about applying Stoicism to daily life. Emphasized the shortness of life and the importance of philosophy.",
+            "keyInsight": "It is not that we have a short time to live, but that we waste a lot of it.",
+            "color": "#C49A6C"
+          },
+          {
+            "period": "50-135 CE",
+            "name": "Epictetus",
+            "role": "The teacher of freedom",
+            "description": "Born a slave, became one of Rome's greatest philosophers. Taught that true freedom comes from within, emphasizing the dichotomy of control and self-mastery.",
+            "keyInsight": "It's not what happens to you, but how you react to it that matters.",
+            "color": "#5C6D67"
+          },
+          {
+            "period": "121-180 CE",
+            "name": "Marcus Aurelius",
+            "role": "The philosopher emperor",
+            "description": "Roman Emperor from 161-180 CE. His private journal, Meditations, reveals a man struggling to maintain virtue under immense pressure. The most powerful man in the world, practicing humility and duty.",
+            "keyInsight": "The impediment to action advances action. What stands in the way becomes the way.",
+            "color": "#C49A6C"
+          }
+        ]
+      }
+    },
+    {
+      "slideNumber": 6,
+      "type": "content",
+      "title": "The Four Cardinal Virtues",
+      "subtitle": "The Pillars of Stoic Ethics and the Foundation of the Good Life",
+      "content": {
+        "virtues": [
+          {
+            "name": "Wisdom",
+            "icon": "fa-brain",
+            "subtitle": "Seeing Reality Clearly",
+            "description": "The ability to make sound decisions by understanding what's truly good, bad, and indifferent. Wisdom means seeing reality as it is, not as our biases distort it. It's about focusing on what we control and accepting what we don't.",
+            "practice": "What's in my control here? Pause before reacting. Examine facts before judgments.",
+            "color": "#C49A6C"
+          },
+          {
+            "name": "Courage",
+            "icon": "fa-shield-alt",
+            "subtitle": "Acting Rightly Despite Fear",
+            "description": "Not just physical bravery, but moral courage—the strength to act according to your principles even when it's difficult, unpopular, or dangerous. Courage means standing firm in life's uncertainties without compromising virtue.",
+            "practice": "Speak up for what's right. Face fears incrementally. View challenges as growth opportunities.",
+            "color": "#5C6D67"
+          },
+          {
+            "name": "Justice",
+            "icon": "fa-balance-scale",
+            "subtitle": "Treating Others Fairly",
+            "description": "Marcus Aurelius called justice \"the source of all other virtues.\" It's about acting fairly and kindly toward others, recognizing our shared humanity. Justice means contributing to the common good, not just pursuing self-interest.",
+            "practice": "What injures the hive injures the bee. Treat others as ends, not means. Build community.",
+            "color": "#C49A6C"
+          },
+          {
+            "name": "Temperance",
+            "icon": "fa-hand-paper",
+            "subtitle": "Self-Control and Moderation",
+            "description": "Finding balance and avoiding excess. Temperance means choosing long-term well-being over short-term satisfaction. It's the ability to manage desires and emotions rather than being controlled by them.",
+            "practice": "Having what is enough. Set boundaries on habits. Resist impulses. Seek simplicity.",
+            "color": "#5C6D67"
+          }
+        ],
+        "unityNote": "The Unity of the Virtues: The Stoics taught that the virtues are interconnected. You cannot fully have one without the others. Acting with justice requires the wisdom to know what's fair, the courage to stand by it, and the temperance to avoid overreacting."
+      }
+    },
+    {
+      "slideNumber": 7,
+      "type": "content",
+      "title": "The Dichotomy of Control",
+      "subtitle": "Epictetus' Foundational Teaching: The Source of Freedom and Peace",
+      "content": {
+        "epictetus": {
+          "quote": "Some things are within our power, while others are not.",
+          "explanation": "This opening line of the Enchiridion contains the entire Stoic program. Most human suffering comes from confusing these two categories."
+        },
+        "withinControl": {
+          "title": "Within Our Control",
+          "items": [
+            {
+              "item": "Our judgments and opinions",
+              "description": "How we interpret events"
+            },
+            {
+              "item": "Our desires and aversions",
+              "description": "What we pursue and avoid"
+            },
+            {
+              "item": "Our impulses to act",
+              "description": "How we choose to respond"
+            }
+          ],
+          "summary": "Whatever is of our own doing — our character and choices",
+          "color": "#5C6D67"
+        },
+        "beyondControl": {
+          "title": "Beyond Our Control",
+          "items": [
+            {
+              "item": "External events",
+              "description": "Natural disasters, economic conditions"
+            },
+            {
+              "item": "Our body",
+              "description": "Illness, aging, genetic predispositions"
+            },
+            {
+              "item": "Reputation and property",
+              "description": "What others think, what we own"
+            }
+          ],
+          "summary": "Whatever is not of our own doing — externals",
+          "color": "#C49A6C"
+        },
+        "practice": [
+          {
+            "step": "1. Morning Reflection",
+            "description": "Ask: \"What challenges might come today?\" Sort them into control categories."
+          },
+          {
+            "step": "2. In the Moment",
+            "description": "When distressed, pause: \"Is this within my control?\" If not, let it go."
+          },
+          {
+            "step": "3. Redirect Energy",
+            "description": "Focus on your response. Ask: \"What would virtue look like here?\""
+          }
+        ],
+        "modernExample": {
+          "scenario": "Social anxiety before a presentation",
+          "uncontrollable": "Everyone must approve of me",
+          "controllable": "I'll focus on being clear, helpful, and well-prepared"
+        }
+      }
+    },
+    {
+      "slideNumber": 8,
+      "type": "content",
+      "title": "Key Stoic Teachers",
+      "subtitle": "Three Roman Stoics Who Shaped the Philosophy",
+      "content": {
+        "teachers": [
+          {
+            "name": "Seneca",
+            "role": "The Statesman",
+            "image": "https://kimi-web-img.moonshot.cn/img/cdn.pixabay.com/3f4370f6ab802c37a4ac7e50c8d5de17aa0fdd22.jpg",
+            "description": "Wealthy Roman senator and advisor to Nero. Lived a life of luxury while advocating simplicity. His writings make Stoicism accessible to everyday life.",
+            "keyWorks": [
+              {
+                "title": "Letters to Lucilius",
+                "description": "124 letters offering practical advice on daily challenges"
+              },
+              {
+                "title": "Essays",
+                "description": "\"On the Shortness of Life,\" \"On Anger,\" \"On Tranquility of Mind\""
+              }
+            ],
+            "coreTeachings": [
+              "Life is long if you know how to use it",
+              "We suffer more in imagination than reality",
+              "True wealth is poverty of desires"
+            ],
+            "quote": "Praecogitati mali mollis ictus venit. (If an evil has been pondered beforehand, the blow is gentle when it comes.)",
+            "color": "#C49A6C"
+          },
+          {
+            "name": "Epictetus",
+            "role": "The Teacher",
+            "icon": "fa-user",
+            "description": "Born a slave, became Rome's greatest philosopher. His teachings focus on freedom through self-mastery and the dichotomy of control.",
+            "keyWorks": [
+              {
+                "title": "The Enchiridion",
+                "description": "\"Handbook\" of core Stoic principles"
+              },
+              {
+                "title": "Discourses",
+                "description": "His teachings as recorded by student Arrian"
+              }
+            ],
+            "coreTeachings": [
+              "Focus on what you control",
+              "True freedom is within",
+              "Don't explain your philosophy, embody it"
+            ],
+            "quote": "Men are disturbed not by things, but by the views which they take of them.",
+            "color": "#5C6D67"
+          },
+          {
+            "name": "Marcus Aurelius",
+            "role": "The Emperor",
+            "icon": "fa-crown",
+            "description": "The most powerful man in the world, practicing humility. His private journal reveals a man struggling to maintain virtue under immense pressure.",
+            "keyWorks": [
+              {
+                "title": "Meditations",
+                "description": "Personal reflections on duty, acceptance, and maintaining virtue while ruling an empire"
+              }
+            ],
+            "coreThemes": [
+              "The obstacle is the way",
+              "Accept the things fate binds you to",
+              "Be content with what you are"
+            ],
+            "quote": "The happiness of your life depends upon the quality of your thoughts.",
+            "color": "#C49A6C"
+          }
+        ]
+      }
+    },
+    {
+      "slideNumber": 9,
+      "type": "chapter",
+      "chapterNumber": "02",
+      "image": "chapter2_practice.png",
+      "title": "The Practice",
+      "subtitle": "Daily Exercises for Stoic Living",
+      "color": "#5C6D67"
+    },
+    {
+      "slideNumber": 10,
+      "type": "content",
+      "title": "Premeditatio Malorum",
+      "subtitle": "Preparing for Adversity Through Negative Visualization",
+      "content": {
+        "whatItIs": {
+          "title": "What It Is",
+          "subtitle": "The Stoic practice of rehearsing adversity in advance",
+          "description": "Literally \"the premeditation of evils,\" this involves anticipating difficulties before they happen—not to dwell in fear, but to prepare the mind. By imagining hardships, we lessen their sting, strengthen our equanimity, and learn to value what we have."
+        },
+        "ancientRoots": [
+          {
+            "source": "Seneca",
+            "quote": "Praecogitati mali mollis ictus venit",
+            "translation": "If an evil has been pondered beforehand, the blow is gentle when it comes."
+          },
+          {
+            "source": "Marcus Aurelius",
+            "example": "Each morning, he reminded himself: \"The people I deal with today will be meddling, ungrateful, arrogant, dishonest, jealous, and surly.\" This preparation helped him respond with virtue."
+          }
+        ],
+        "exercises": [
+          {
+            "number": 1,
+            "title": "Morning Visualization",
+            "description": "Before starting your day, imagine small frustrations you might face—delays, criticism, fatigue. Prepare to meet them with patience."
+          },
+          {
+            "number": 2,
+            "title": "Contemplate Loss",
+            "description": "Choose something you value—health, a friendship, a possession. Imagine losing it. Sit with the discomfort, then feel gratitude that you still have it now."
+          },
+          {
+            "number": 3,
+            "title": "Rehearse Greater Trials",
+            "description": "Take a larger fear—financial loss, illness, death. Ask: \"If this came, what would remain within my control?\" Picture responding with courage."
+          }
+        ],
+        "paradox": "By imagining loss, we don't become gloomy—we become grateful. We realize that these outcomes, though harsh, cannot rob us of our ability to act with virtue.",
+        "clarification": "This isn't worst-case spiraling. Premeditatio is brief, structured, and ends in action. It makes you calmer, not gloomier."
+      }
+    },
+    {
+      "slideNumber": 11,
+      "type": "content",
+      "title": "The Stoic Morning & Evening Routine",
+      "subtitle": "Daily Practices That Structure Stoic Living",
+      "content": {
+        "morning": {
+          "icon": "fa-sun",
+          "title": "Morning Routine",
+          "introduction": "Marcus Aurelius began each morning by reminding himself of the challenges ahead and preparing to meet them with virtue. This practice takes 10-20 minutes and sets the tone for the entire day.",
+          "steps": [
+            {
+              "number": 1,
+              "title": "Perspective Taking (5 minutes)",
+              "description": "Ask yourself:",
+              "questions": [
+                "What challenges might come today?",
+                "How will I handle them virtuously?",
+                "What good things might I take for granted?"
+              ]
+            },
+            {
+              "number": 2,
+              "title": "Stoic Meditation (5-10 minutes)",
+              "description": "Sit quietly and imagine how you'll respond to setbacks. Visualize difficult people and situations. Prepare yourself so nothing catches you off-guard. End with gratitude for the opportunity to practice virtue."
+            },
+            {
+              "number": 3,
+              "title": "Set Daily Intention",
+              "description": "Choose one virtue to focus on today. Say: \"Today I will practice [wisdom/courage/justice/temperance] in all my actions.\""
+            }
+          ],
+          "color": "#C49A6C"
+        },
+        "evening": {
+          "icon": "fa-moon",
+          "title": "Evening Routine",
+          "introduction": "Seneca wrote: \"The mind should be summoned to review its day.\" This practice creates accountability and ensures continuous learning and improvement.",
+          "steps": [
+            {
+              "number": 1,
+              "title": "The Three Questions",
+              "questions": [
+                {
+                  "question": "What did I do well today?",
+                  "purpose": "Recognize virtuous actions"
+                },
+                {
+                  "question": "Where did I fall short?",
+                  "purpose": "Acknowledge mistakes without self-judgment"
+                },
+                {
+                  "question": "What did I learn?",
+                  "purpose": "Extract lessons for tomorrow"
+                }
+              ]
+            },
+            {
+              "number": 2,
+              "title": "Review the Day's Events",
+              "description": "Go through your day chronologically. Examine your responses to challenges. Where did you react emotionally? Where did you act with virtue? Note patterns and areas for growth."
+            },
+            {
+              "number": 3,
+              "title": "Forgive and Plan",
+              "description": "Forgive yourself for mistakes. Plan how to do better tomorrow. Set one specific intention for improvement.",
+              "quote": "Don't be discouraged. The mark of progress is not never falling, but rising again more quickly."
+            }
+          ],
+          "color": "#5C6D67"
+        },
+        "powerOfHabit": "A gem cannot be polished without friction, nor a man perfected without trials. — These daily practices create the structure for lifelong growth in virtue."
+      }
+    },
+    {
+      "slideNumber": 12,
+      "type": "content",
+      "title": "Stoic Mindfulness",
+      "subtitle": "Prosoche: Attention to Our Ruling Faculty",
+      "content": {
+        "definition": {
+          "title": "What is Prosoche?",
+          "subtitle": "Constant attention to one's ruling faculty and judgments",
+          "description": "Prosoche (προσοχή) is the Stoic practice of mindfulness—continuously monitoring our thoughts, judgments, and reactions throughout the day. Unlike Buddhist mindfulness which often focuses on bodily sensations, Stoic mindfulness centers on our rational faculty: the seat of judgment and choice."
+        },
+        "goal": {
+          "description": "To catch automatic impressions (phantasiai) before they become destructive emotions or actions. To distinguish between:",
+          "distinction": [
+            {
+              "type": "Impressions",
+              "definition": "Automatic thoughts that arise",
+              "color": "#5C6D67"
+            },
+            {
+              "type": "Judgments",
+              "definition": "Our chosen response",
+              "color": "#C49A6C"
+            }
+          ],
+          "keyInsight": "We can't control what impressions arise, but we can control whether we assent to them. This is where freedom lies."
+        },
+        "practice": [
+          {
+            "number": 1,
+            "title": "Catch the Impression",
+            "description": "Notice when a strong emotion arises. Pause and identify the thought that triggered it. Say: \"You are just an impression, not the thing itself.\""
+          },
+          {
+            "number": 2,
+            "title": "Examine the Judgment",
+            "description": "Ask: \"Is this judgment accurate? Is it about something I control? Does it align with virtue?\""
+          },
+          {
+            "number": 3,
+            "title": "Choose Your Response",
+            "description": "Withhold assent if the judgment is false. Redirect your energy toward virtuous action. Focus on what you control."
+          }
+        ],
+        "modernParallel": {
+          "title": "Cognitive Behavioral Therapy",
+          "cbt": "Thoughts cause feelings",
+          "stoicism": "Judgments cause disturbances",
+          "conclusion": "Both teach us to examine and challenge our thoughts rather than being controlled by them."
+        }
+      }
+    },
+    {
+      "slideNumber": 13,
+      "type": "content",
+      "title": "Journaling and Self-Reflection",
+      "subtitle": "The Stoic Practice of Philosophical Writing",
+      "content": {
+        "tradition": {
+          "title": "The Stoic Tradition of Journaling",
+          "subtitle": "Marcus Aurelius' Meditations was a private journal",
+          "description": "Never intended for publication, it reveals a man struggling with the same challenges we face today: distraction, anger, discouragement, and the difficulty of maintaining virtue under pressure. His journal was his tool for self-examination and philosophical practice."
+        },
+        "whyJournal": [
+          {
+            "reason": "Track Progress",
+            "description": "Monitor your growth in virtue over time"
+          },
+          {
+            "reason": "Examine Judgments",
+            "description": "Identify faulty thinking patterns"
+          },
+          {
+            "reason": "Maintain Accountability",
+            "description": "Stay committed to philosophical principles"
+          },
+          {
+            "reason": "Process Emotions",
+            "description": "Transform reactive feelings into reasoned responses"
+          }
+        ],
+        "senecaPractice": "What really ruins our character is the fact that none of us looks back over his life. He wrote regular letters as a form of self-reflection.",
+        "practicalPrompts": [
+          {
+            "category": "Daily Review",
+            "questions": [
+              "Where did I act with virtue today?",
+              "Where did I fall to passion or fear?",
+              "What would I do differently?"
+            ]
+          },
+          {
+            "category": "Judgment Examination",
+            "questions": [
+              "What automatic thoughts arose?",
+              "Were they accurate? In my control?",
+              "How did my judgments affect my emotions?"
+            ]
+          },
+          {
+            "category": "Gratitude & Perspective",
+            "questions": [
+              "What am I grateful for today?",
+              "What hardships did I escape?",
+              "How can I be better tomorrow?"
+            ]
+          }
+        ],
+        "marcusExample": {
+          "quotes": [
+            "The people I deal with today will be... meddling, ungrateful, arrogant, dishonest, jealous, and surly.",
+            "But I have seen the beauty of good, and the ugliness of evil, and have recognized that the wrongdoer has a nature related to my own."
+          ],
+          "note": "He uses his journal to remind himself of his principles and prepare for challenges."
+        }
+      }
+    },
+    {
+      "slideNumber": 14,
+      "type": "chapter",
+      "chapterNumber": "03",
+      "image": "chapter3_science.png",
+      "title": "The Science",
+      "subtitle": "Stoicism's Influence on Modern Psychology",
+      "color": "#C49A6C"
+    },
+    {
+      "slideNumber": 15,
+      "type": "content",
+      "title": "The Philosophical Roots of CBT",
+      "subtitle": "How Stoicism Became the Foundation of Modern Psychotherapy",
+      "content": {
+        "directLineage": {
+          "title": "The Direct Lineage",
+          "subtitle": "CBT founders explicitly credited Epictetus as their philosophical precursor",
+          "description": "Cognitive Behavioral Therapy didn't emerge from thin air—it was built on Stoic insights. Aaron Beck and Albert Ellis, the pioneers of CBT, openly acknowledged that the core principle of their therapeutic approach came directly from ancient Stoic philosophy."
+        },
+        "sharedInsight": {
+          "epictetus": {
+            "period": "1st Century CE",
+            "quote": "Men are disturbed not by things, but by the views which they take of them."
+          },
+          "cbt": {
+            "period": "20th Century",
+            "principle": "Events don't cause emotional disturbances—our thoughts and beliefs about events do. Change your thinking, change your emotional response."
+          },
+          "beckQuote": "The philosophical origins of cognitive therapy can be traced back to the Stoic philosophers... Epictetus wrote in The Enchiridion: 'Men are disturbed not by things but by the views which they take of them.'"
+        },
+        "pioneers": [
+          {
+            "name": "Albert Ellis",
+            "role": "Founder of Rational Emotive Behavior Therapy (REBT)",
+            "quote": "Much of the theory of REBT was derived from philosophy rather than psychology.",
+            "claim": "Ellis said he \"rescued Epictetus from near-obscurity and made him famous all over again.\""
+          },
+          {
+            "name": "Aaron Beck",
+            "role": "Father of Cognitive Therapy",
+            "quote": "The philosophical underpinnings go back thousands of years, certainly to the time of the Stoics, who considered man's conceptions (or misconceptions) of events rather than the events themselves as the key to his emotional upsets."
+          }
+        ],
+        "parallels": [
+          {
+            "stoic": "Stoic mindfulness",
+            "cbt": "CBT's cognitive monitoring"
+          },
+          {
+            "stoic": "Examining judgments",
+            "cbt": "Cognitive restructuring"
+          },
+          {
+            "stoic": "Dichotomy of control",
+            "cbt": "Focusing on controllables"
+          }
+        ]
+      }
+    },
+    {
+      "slideNumber": 16,
+      "type": "content",
+      "title": "Research Evidence",
+      "subtitle": "Scientific Studies on Stoicism and Mental Health",
+      "content": {
+        "sabs": {
+          "title": "The Stoic Attitudes and Behaviors Scale (SABS)",
+          "description": "Modern researchers have developed validated scales to measure Stoic beliefs and practices. Studies with thousands of participants worldwide show clear patterns: people who score highly on Stoicism report greater life satisfaction, stronger resilience, and lower levels of anger and anxiety.",
+          "clarification": "Conversely, those who practice \"stiff-upper-lip stoicism\" (emotional suppression) actually do worse—confirming that authentic Stoicism is about wisdom and acceptance, not suppression."
+        },
+        "stoicWeek": {
+          "title": "Stoic Week: Measurable Benefits in 7 Days",
+          "description": "Annual event where participants live like Stoics for one week. Results show:",
+          "results": [
+            {
+              "metric": "10%",
+              "description": "Increase in life satisfaction"
+            },
+            {
+              "metric": "14%",
+              "description": "Boost in positive emotions"
+            },
+            {
+              "metric": "-15%",
+              "description": "Reduction in negative emotions"
+            },
+            {
+              "metric": "-11%",
+              "description": "Decrease in anxiety"
+            }
+          ],
+          "clinicalQuote": "When people put Stoicism into practice in their lives, their relationships, stress levels and general well-being all tend to improve. — Dr. Donald Robertson, cognitive-behavioral psychotherapist"
+        },
+        "mentalHealthBenefits": [
+          {
+            "benefit": "Reduced Anxiety & Depression",
+            "description": "Research shows adopting Stoic perspectives is associated with notable reduction in anxiety and depression symptoms."
+          },
+          {
+            "benefit": "Enhanced Resilience",
+            "description": "Stoic principles significantly enhance emotional resilience and capacity to cope with life's difficulties."
+          },
+          {
+            "benefit": "Reduced Social Comparison",
+            "description": "Stoicism provides a buffer against social comparison by emphasizing internal standards over external validation."
+          },
+          {
+            "benefit": "Stress Reduction",
+            "description": "Stoic principles significantly reduce perceived stress and promote psychological well-being."
+          }
+        ],
+        "sabsAsTool": "The Stoic Attitudes and Behaviors Scale works like both a mirror and a map—showing where you're strong and where you might want to grow."
+      }
+    },
+    {
+      "slideNumber": 17,
+      "type": "content",
+      "title": "Digital Stoicism",
+      "subtitle": "Ancient Wisdom for the Modern World",
+      "content": {
+        "modernChallenge": {
+          "title": "The Modern Challenge",
+          "subtitle": "Stoicism offers tools for digital wellness",
+          "description": "Social media, smartphones, and information overload create new challenges: constant distraction, comparison culture, and the need for external validation. Stoic principles provide a framework for maintaining autonomy and peace of mind."
+        },
+        "dichotomyOnline": {
+          "title": "The Dichotomy of Control Online",
+          "beyondControl": [
+            "Likes, comments, shares",
+            "Follower counts",
+            "Others' opinions",
+            "Algorithmic feeds",
+            "Going viral"
+          ],
+          "withinControl": [
+            "What we post",
+            "How we engage",
+            "Time we spend",
+            "Our intentions",
+            "Our response to feedback"
+          ],
+          "keyInsight": "Stoicism doesn't reject technology—it guides us to use it virtuously, with clear intentions and boundaries."
+        },
+        "strategies": [
+          {
+            "number": 1,
+            "title": "Intentional Posting",
+            "description": "Ask: \"Am I adding value or seeking validation?\" Post to be helpful, not to feed ego."
+          },
+          {
+            "number": 2,
+            "title": "Digital Temperance",
+            "description": "Set clear boundaries: time limits, no-phone zones. Practice moderation in all digital consumption."
+          },
+          {
+            "number": 3,
+            "title": "Negative Visualization",
+            "description": "Counter the highlight-reel effect by remembering: social media shows curated moments, not full reality."
+          },
+          {
+            "number": 4,
+            "title": "Mindful Consumption",
+            "description": "Curate your feed intentionally. Unfollow accounts that trigger comparison or unhealthy emotions."
+          }
+        ],
+        "mindfulScroll": {
+          "title": "The Mindful Scroll",
+          "questions": [
+            "Why am I opening this app?",
+            "What would virtue look like here?",
+            "Am I in control, or is the algorithm?"
+          ]
+        }
+      }
+    },
+    {
+      "slideNumber": 18,
+      "type": "content",
+      "title": "Living Stoically",
+      "subtitle": "Practical Applications for Modern Life",
+      "content": {
+        "realWorldScenarios": [
+          {
+            "scenario": "Workplace Stress",
+            "situation": "Unfair criticism from your boss",
+            "stoicResponse": "I can't control their opinion. I can control my effort and integrity. Let me focus on doing good work and responding with reason, not defensiveness."
+          },
+          {
+            "scenario": "Relationship Conflict",
+            "situation": "Argument with a partner",
+            "stoicResponse": "This person is not my enemy but a fellow human being. What would justice look like here? Let me listen to understand, not to win."
+          },
+          {
+            "scenario": "Financial Anxiety",
+            "situation": "Market downturn affecting investments",
+            "stoicResponse": "Wealth is indifferent. True wealth is virtue and contentment. I will focus on what I control: spending wisely, saving consistently, and not worrying about external events."
+          },
+          {
+            "scenario": "Major Setback",
+            "situation": "Job loss or business failure",
+            "stoicResponse": "This is not a tragedy but an opportunity to practice virtue. What can I learn? How can I respond with courage and wisdom? The obstacle becomes the way."
+          }
+        ],
+        "corePrinciples": [
+          {
+            "icon": "fa-brain",
+            "title": "Focus on Virtue",
+            "description": "In every situation, ask: \"What would wisdom, courage, justice, or temperance look like here?\" Let virtue guide your actions."
+          },
+          {
+            "icon": "fa-anchor",
+            "title": "Accept What Is",
+            "description": "Don't demand that events conform to your wishes. Wish that they happen as they do, and your life will flow well."
+          },
+          {
+            "icon": "fa-dumbbell",
+            "title": "Practice Daily",
+            "description": "Stoicism is a muscle that strengthens with use. Morning reflection, evening review, journaling—these aren't optional extras but essential practice."
+          },
+          {
+            "icon": "fa-users",
+            "title": "Serve the Common Good",
+            "description": "We're all part of the same human community. Act for others' benefit, not just your own. Justice is the source of all virtues."
+          }
+        ],
+        "reminder": "Stoicism isn't about suppression or detachment. It's about transforming your perspective to live with greater wisdom, courage, justice, and temperance—finding strength in virtue rather than externals."
+      }
+    },
+    {
+      "slideNumber": 19,
+      "type": "final",
+      "image": "closing_path.png",
+      "title": "The Stoic Path Forward",
+      "content": {
+        "icon": "fa-compass",
+        "messages": [
+          "You have power over your mind—not outside events. Realize this, and you will find strength.",
+          "The path to the good life begins not with changing the world, but with mastering yourself.",
+          "Start today: practice virtue, focus on what you control, and meet adversity with wisdom."
+        ],
+        "quote": {
+          "text": "The impediment to action advances action. What stands in the way becomes the way.",
+          "author": "Marcus Aurelius"
+        },
+        "virtues": [
+          {
+            "icon": "fa-brain",
+            "name": "Wisdom"
+          },
+          {
+            "icon": "fa-shield-alt",
+            "name": "Courage"
+          },
+          {
+            "icon": "fa-balance-scale",
+            "name": "Justice"
+          },
+          {
+            "icon": "fa-hand-paper",
+            "name": "Temperance"
+          }
+        ]
+      }
+    }
+  ]
+}
