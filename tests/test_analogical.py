@@ -1,8 +1,6 @@
 """Tests for the Analogical Reasoning module."""
 
 import unittest
-import sys
-sys.path.insert(0, '/Users/mariuscomper/conductor/workspaces/conductor-playground/tianjin')
 
 from cognitive_arch.modules.analogical import (
     Structure, StructureMapper, AnalogRetriever, AnalogicalInference

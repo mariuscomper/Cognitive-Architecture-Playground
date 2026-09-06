@@ -4,9 +4,6 @@ import unittest
 import time
 from datetime import datetime
 
-import sys
-sys.path.insert(0, '/Users/mariuscomper/conductor/workspaces/conductor-playground/tianjin')
-
 from cognitive_arch.modules.working_memory import WorkingMemory, Chunk, ChunkType
 from cognitive_arch.modules.working_memory.chunks import create_fact, create_goal, create_hypothesis
 

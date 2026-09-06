@@ -132,7 +132,7 @@ def demo_d_separation():
 
     # X and Y unconditionally
     result = graph.is_d_separated(x, y, set())
-    print(f"   X _||_ Y | {} : {result}")
+    print(f"   X _||_ Y | {{}} : {result}")
 
     # X and Y given Z
     result = graph.is_d_separated(x, y, {z})
